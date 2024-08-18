@@ -63,8 +63,16 @@ const fetchVideoInfo = async (videoId) => {
 };
 
 const formatSubtitles = (captions) => {
+  const formatTime = (seconds) => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = Math.floor(seconds % 60);
+    return `[${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}]`;
+  };
+
   return captions.map(caption => {
-    return `[${caption.start}] ${caption.text}`;
+    const timeFormatted = formatTime(caption.start);
+    return `${timeFormatted} ${caption.text}`;
   }).join('\n');
 };
 
@@ -106,15 +114,19 @@ const sendMessage = async (chatId, text) => {
     console.log(`Simulated message to chat ID ${chatId}:\n${text}`);
   } else {
     try {
-      await bot.sendMessage(chatId, text, { parse_mode: 'Markdown' });
+      // Split the message into chunks of 4000 characters
+      const messageParts = text.match(/[\s\S]{1,4000}/g) || [];
+
+      for (const part of messageParts) {
+        await bot.sendMessage(chatId, part, { parse_mode: 'Markdown' });
+        // Add a small delay between messages to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
     } catch (error) {
       console.error('Ошибка отправки сообщения:', error);
-      if (error.response && error.response.statusCode === 400 && error.response.body.description.includes('message is too long')) {
-        const parts = text.match(/[\s\S]{1,4000}/g) || [];
-        for (const part of parts) {
-          await bot.sendMessage(chatId, part, { parse_mode: 'Markdown' });
-        }
-      }
+      // If there's still an error, log it but don't throw, to prevent the whole process from crashing
+      // You might want to send a fallback message to the user here
+      await bot.sendMessage(chatId, 'Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз позже.');
     }
   }
 };
@@ -172,4 +184,12 @@ module.exports = async (req, res) => {
   } else {
     res.status(405).json({ error: 'Метод не разрешен' });
   }
+};
+
+// В конце файла bot.js добавьте:
+module.exports = {
+  extractVideoId,
+  fetchVideoInfo,
+  formatSubtitles,
+  generateTakeaways
 };
