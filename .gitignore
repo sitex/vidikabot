@@ -1,0 +1,5 @@
+node_modules
+.idea
+prompt_template.txt
+.env
+.vercel
