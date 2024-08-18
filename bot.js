@@ -2,8 +2,8 @@ require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const axios = require('axios');
-const { JSDOM } = require('jsdom');
 const NodeCache = require('node-cache');
+const { getSubtitles } = require('youtube-captions-scraper');
 
 // Initialize cache
 const cache = new NodeCache({ stdTTL: 3600 }); // Cache for 1 hour
@@ -26,108 +26,46 @@ const fetchVideoInfo = async (videoId) => {
   const cachedInfo = cache.get(videoId);
   if (cachedInfo) return cachedInfo;
 
-  // Fetch title using oEmbed API
-  const oembedUrl = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`;
-  const oembedResponse = await axios.get(oembedUrl);
+  try {
+    // Fetch title using oEmbed API
+    const oembedUrl = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`;
+    const oembedResponse = await axios.get(oembedUrl);
 
-  if (!oembedResponse.data || !oembedResponse.data.title) {
-    throw new Error('Не удалось получить заголовок видео');
-  }
-
-  const title = oembedResponse.data.title;
-
-  // Fetch captions using the original method
-  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-  const videoResponse = await axios.get(videoUrl, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    if (!oembedResponse.data || !oembedResponse.data.title) {
+      throw new Error('Не удалось получить заголовок видео');
     }
-  });
 
-  const html = videoResponse.data;
-  const dom = new JSDOM(html);
-  const scripts = dom.window.document.getElementsByTagName('script');
-  let ytInitialPlayerResponse;
+    const title = oembedResponse.data.title;
 
-  for (const script of scripts) {
-    const content = script.textContent;
-    if (content.includes('ytInitialPlayerResponse')) {
-      const match = content.match(/ytInitialPlayerResponse\s*=\s*({.*?});/);
-      if (match) {
-        ytInitialPlayerResponse = JSON.parse(match[1]);
-        break;
-      }
+    // Fetch captions using youtube-captions-scraper
+    const captions = await getSubtitles({
+      videoID: videoId,
+      lang: 'ru' // Try Russian first
+    }).catch(() => getSubtitles({
+      videoID: videoId,
+      lang: 'en' // Fallback to English if Russian is not available
+    }));
+
+    if (!captions || captions.length === 0) {
+      throw new Error('Субтитры не найдены для этого видео');
     }
+
+    const result = {
+      title: title,
+      captions: captions
+    };
+    cache.set(videoId, result);
+    return result;
+  } catch (error) {
+    console.error('Error fetching video info:', error);
+    throw new Error('Не удалось получить информацию о видео');
   }
-
-  if (!ytInitialPlayerResponse || !ytInitialPlayerResponse.captions) {
-    throw new Error('Не удалось получить информацию о субтитрах');
-  }
-
-  const result = {
-    title: title,
-    captions: ytInitialPlayerResponse.captions
-  };
-  cache.set(videoId, result);
-  return result;
-};
-const extractCaptionTracks = (captions) => {
-  if (!captions || !captions.playerCaptionsTracklistRenderer) {
-    throw new Error('Субтитры не найдены');
-  }
-  return captions.playerCaptionsTracklistRenderer.captionTracks;
 };
 
-const selectCaptionTrack = (tracks, lang) => {
-  return tracks.find(track => track.languageCode === lang)
-    || tracks.find(track => track.kind === 'asr')
-    || tracks[0];
-};
-
-const fetchAndParseSubtitles = async (url) => {
-  const cachedSubtitles = cache.get(url);
-  if (cachedSubtitles) return cachedSubtitles;
-
-  const response = await axios.get(url);
-  const xml = response.data;
-  const subtitles = parseSubtitlesXml(xml);
-  cache.set(url, subtitles);
-  return subtitles;
-};
-
-const parseSubtitlesXml = (xml) => {
-  const dom = new JSDOM(xml);
-  const textNodes = dom.window.document.getElementsByTagName('text');
-  return Array.from(textNodes).map(node => ({
-    start: parseFloat(node.getAttribute('start')),
-    duration: parseFloat(node.getAttribute('dur')),
-    text: decodeHtmlEntities(node.textContent)
-  }));
-};
-
-const formatSubtitles = (subtitles) => {
-  return subtitles.map(sub => {
-    const formattedTime = formatTime(sub.start);
-    return `${formattedTime} ${sub.text.trim()}`;
+const formatSubtitles = (captions) => {
+  return captions.map(caption => {
+    return `[${caption.start}] ${caption.text}`;
   }).join('\n');
-};
-
-const formatTime = (seconds) => {
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  const secs = Math.floor(seconds % 60);
-  return `[${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}]`;
-};
-
-const decodeHtmlEntities = (text) => {
-  const entities = {
-    '&#39;': "'",
-    '&quot;': '"',
-    '&amp;': '&',
-    '&lt;': '<',
-    '&gt;': '>',
-  };
-  return text.replace(/&#?\w+;/g, match => entities[match] || match).replace(/\n/g, ' ');
 };
 
 const generateTakeaways = async (title, subtitles) => {
@@ -148,7 +86,7 @@ const generateTakeaways = async (title, subtitles) => {
     [VIDEO TITLE]:
     ${title}
     [VIDEO TRANSCRIPT]:
-    ${captionText}
+    ${subtitles}
     [KEY TAKEAWAYS LIST IN Russian]:
   `;
 
@@ -158,7 +96,7 @@ const generateTakeaways = async (title, subtitles) => {
     return response.text();
   } catch (error) {
     console.error('Error generating takeaways:', error);
-    throw new Error('Failed to generate takeaways');
+    throw new Error('Не удалось сгенерировать краткое содержание');
   }
 };
 
@@ -178,18 +116,6 @@ const sendMessage = async (chatId, text) => {
         }
       }
     }
-  }
-};
-
-// Translate function
-const translate = async (text, targetLang = 'ru') => {
-  try {
-    const result = await model.generateContent(`Translate the following text to ${targetLang}: "${text}"`);
-    const response = await result.response;
-    return response.text();
-  } catch (error) {
-    console.error('Ошибка перевода:', error);
-    return text; // Return original text if translation fails
   }
 };
 
@@ -213,30 +139,32 @@ module.exports = async (req, res) => {
           }
 
           const { title, captions } = await fetchVideoInfo(videoId);
-          const captionTracks = extractCaptionTracks(captions);
 
-          if (!captionTracks || captionTracks.length === 0) {
+          if (!captions || captions.length === 0) {
             throw new Error('Для этого видео не найдены субтитры');
           }
 
-          const selectedTrack = selectCaptionTrack(captionTracks, 'en');
-          if (!selectedTrack) {
-            throw new Error('Не найдены подходящие субтитры для этого видео');
-          }
-
-          const subtitles = await fetchAndParseSubtitles(selectedTrack.baseUrl);
-          const formattedSubtitles = formatSubtitles(subtitles);
+          const formattedSubtitles = formatSubtitles(captions);
 
           const takeaways = await generateTakeaways(title, formattedSubtitles);
 
           await sendMessage(chatId, `Краткое содержание видео "${title}":\n\n${takeaways}`);
         } else {
-          const invalidUrlMessage = await translate('Please send a valid YouTube video URL.');
-          await sendMessage(chatId, invalidUrlMessage);
+          await sendMessage(chatId, 'Пожалуйста, отправьте корректную ссылку на видео YouTube.');
         }
       } catch (error) {
         console.error('Ошибка обработки сообщения:', error);
-        await sendMessage(chatId, `Ошибка: ${error.message}`);
+        let errorMessage = 'Произошла ошибка при обработке вашего запроса. ';
+        if (error.message.includes('Неверная ссылка')) {
+          errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
+        } else if (error.message.includes('Субтитры не найдены')) {
+          errorMessage += 'Для этого видео субтитры недоступны. Пожалуйста, попробуйте другое видео с доступными субтитрами.';
+        } else if (error.message.includes('Не удалось сгенерировать краткое содержание')) {
+          errorMessage += 'Не удалось создать краткое содержание. Пожалуйста, попробуйте еще раз или используйте другое видео.';
+        } else {
+          errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
+        }
+        await sendMessage(chatId, errorMessage);
       }
     }
     res.status(200).json({ message: 'OK' });
