@@ -26,14 +26,25 @@ const fetchVideoInfo = async (videoId) => {
   const cachedInfo = cache.get(videoId);
   if (cachedInfo) return cachedInfo;
 
-  const url = `https://www.youtube.com/watch?v=${videoId}`;
-  const response = await axios.get(url, {
+  // Fetch title using oEmbed API
+  const oembedUrl = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`;
+  const oembedResponse = await axios.get(oembedUrl);
+
+  if (!oembedResponse.data || !oembedResponse.data.title) {
+    throw new Error('Не удалось получить заголовок видео');
+  }
+
+  const title = oembedResponse.data.title;
+
+  // Fetch captions using the original method
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+  const videoResponse = await axios.get(videoUrl, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
   });
 
-  const html = response.data;
+  const html = videoResponse.data;
   const dom = new JSDOM(html);
   const scripts = dom.window.document.getElementsByTagName('script');
   let ytInitialPlayerResponse;
@@ -49,20 +60,17 @@ const fetchVideoInfo = async (videoId) => {
     }
   }
 
-  if (!ytInitialPlayerResponse) throw new Error('Не удалось извлечь информацию о видео');
-
-  // Проверяем, есть ли videoDetails и title
-  if (ytInitialPlayerResponse.videoDetails && ytInitialPlayerResponse.videoDetails.title) {
-    const title = ytInitialPlayerResponse.videoDetails.title;
-    const captions = ytInitialPlayerResponse.captions;
-    const result = { title, captions };
-    cache.set(videoId, result);
-    return result;
-  } else {
-    throw new Error('Не удалось получить заголовок видео');
+  if (!ytInitialPlayerResponse || !ytInitialPlayerResponse.captions) {
+    throw new Error('Не удалось получить информацию о субтитрах');
   }
-};
 
+  const result = {
+    title: title,
+    captions: ytInitialPlayerResponse.captions
+  };
+  cache.set(videoId, result);
+  return result;
+};
 const extractCaptionTracks = (captions) => {
   if (!captions || !captions.playerCaptionsTracklistRenderer) {
     throw new Error('Субтитры не найдены');
