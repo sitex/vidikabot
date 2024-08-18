@@ -156,14 +156,18 @@ const generateTakeaways = async (title, subtitles) => {
 
 // Helper function to send messages with error handling
 const sendMessage = async (chatId, text) => {
-  try {
-    await bot.sendMessage(chatId, text, { parse_mode: 'Markdown' });
-  } catch (error) {
-    console.error('Ошибка отправки сообщения:', error);
-    if (error.response && error.response.statusCode === 400 && error.response.body.description.includes('message is too long')) {
-      const parts = text.match(/[\s\S]{1,4000}/g) || [];
-      for (const part of parts) {
-        await bot.sendMessage(chatId, part, { parse_mode: 'Markdown' });
+  if (process.env.VERCEL_ENV !== 'production') {
+      console.log(`Simulated message to chat ID ${chatId}:\n${text}`);
+  } else {
+    try {
+      await bot.sendMessage(chatId, text, { parse_mode: 'Markdown' });
+    } catch (error) {
+      console.error('Ошибка отправки сообщения:', error);
+      if (error.response && error.response.statusCode === 400 && error.response.body.description.includes('message is too long')) {
+        const parts = text.match(/[\s\S]{1,4000}/g) || [];
+        for (const part of parts) {
+          await bot.sendMessage(chatId, part, { parse_mode: 'Markdown' });
+        }
       }
     }
   }
