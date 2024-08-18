@@ -51,11 +51,16 @@ const fetchVideoInfo = async (videoId) => {
 
   if (!ytInitialPlayerResponse) throw new Error('Не удалось извлечь информацию о видео');
 
-  const title = ytInitialPlayerResponse.videoDetails.title;
-  const captions = ytInitialPlayerResponse.captions;
-  const result = { title, captions };
-  cache.set(videoId, result);
-  return result;
+  // Проверяем, есть ли videoDetails и title
+  if (ytInitialPlayerResponse.videoDetails && ytInitialPlayerResponse.videoDetails.title) {
+    const title = ytInitialPlayerResponse.videoDetails.title;
+    const captions = ytInitialPlayerResponse.captions;
+    const result = { title, captions };
+    cache.set(videoId, result);
+    return result;
+  } else {
+    throw new Error('Не удалось получить заголовок видео');
+  }
 };
 
 const extractCaptionTracks = (captions) => {
