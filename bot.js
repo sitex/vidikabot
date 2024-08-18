@@ -133,7 +133,7 @@ const decodeHtmlEntities = (text) => {
 const generateTakeaways = async (title, subtitles) => {
   const prompt = `
     I want you to only answer in Russian. 
-    Your goal is to extract key takeaways of the next chunk of the transcript. 
+    Your goal is to extract key takeaways from the following video transcript. 
     Takeaways must be concise, informative and easy to read & understand.
     Each key takeaway should be a list item, of the following format:
     - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
@@ -147,8 +147,8 @@ const generateTakeaways = async (title, subtitles) => {
     Do not render brackets. Do not prepend takeaway with "Key takeaway".
     [VIDEO TITLE]:
     ${title}
-    [TIMESTAMPED VIDEO TRANSCRIPT CHUNK]:
-    ${subtitles}
+    [VIDEO TRANSCRIPT]:
+    ${captionText}
     [KEY TAKEAWAYS LIST IN Russian]:
   `;
 
@@ -165,7 +165,7 @@ const generateTakeaways = async (title, subtitles) => {
 // Helper function to send messages with error handling
 const sendMessage = async (chatId, text) => {
   if (process.env.VERCEL_ENV !== 'production') {
-      console.log(`Simulated message to chat ID ${chatId}:\n${text}`);
+    console.log(`Simulated message to chat ID ${chatId}:\n${text}`);
   } else {
     try {
       await bot.sendMessage(chatId, text, { parse_mode: 'Markdown' });
@@ -203,8 +203,7 @@ module.exports = async (req, res) => {
 
       try {
         if (messageText.startsWith('/start')) {
-          const welcomeMessage = await translate('Welcome! Send me a YouTube video URL to get its summary.');
-          await sendMessage(chatId, welcomeMessage);
+          await sendMessage(chatId, 'Добро пожаловать! Отправьте мне ссылку на видео YouTube, чтобы получить его краткое содержание.');
         } else if (messageText.includes('youtube.com') || messageText.includes('youtu.be')) {
           await sendMessage(chatId, 'Обрабатываю ваш запрос. Это может занять некоторое время...');
 
