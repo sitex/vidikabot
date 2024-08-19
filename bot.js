@@ -30,7 +30,6 @@ const fetchVideoInfo = async (videoId) => {
     // Fetch video info using ytdl-core
     const videoInfo = await ytdl.getInfo(videoId);
     const title = videoInfo.videoDetails.title;
-<<<<<<< HEAD
 
     // Fetch captions using ytdl-core
     const captionTracks = videoInfo.player_response.captions?.playerCaptionsTracklistRenderer?.captionTracks;
@@ -41,8 +40,6 @@ const fetchVideoInfo = async (videoId) => {
     // Prefer Russian captions, fallback to English
     const captionTrack = captionTracks.find(track => track.languageCode === 'ru') ||
         captionTracks.find(track => track.languageCode === 'en');
-=======
->>>>>>> 4fd8bc7 (use ytdl for title)
 
     if (!captionTrack) {
       throw new Error('Субтитры на русском или английском не найдены');
@@ -60,11 +57,7 @@ const fetchVideoInfo = async (videoId) => {
     return result;
   } catch (error) {
     console.error('Error fetching video info:', error);
-<<<<<<< HEAD
     throw new Error(error.message);
-=======
-    throw new Error('Субтитры не найдены для этого видео');
->>>>>>> 4fd8bc7 (use ytdl for title)
   }
 };
 
@@ -173,7 +166,6 @@ module.exports = async (req, res) => {
       } catch (error) {
         console.error('Ошибка обработки сообщения:', error);
         let errorMessage = 'Произошла ошибка при обработке вашего запроса. ';
-<<<<<<< HEAD
         errorMessage += error.message;
         // if (error.message.includes('Неверная ссылка')) {
         //   errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
@@ -184,17 +176,7 @@ module.exports = async (req, res) => {
         // } else {
         //   errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
         // }
-=======
-        if (error.message.includes('Неверная ссылка')) {
-          errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
-        } else if (error.message.includes('не найдены субтитры')) {
-          errorMessage += 'Для этого видео субтитры недоступны. Пожалуйста, попробуйте другое видео с доступными субтитрами.';
-        } else if (error.message.includes('Не удалось сгенерировать краткое содержание')) {
-          errorMessage += 'Не удалось создать краткое содержание. Пожалуйста, попробуйте еще раз или используйте другое видео.';
-        } else {
-          errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
-        }
->>>>>>> 4fd8bc7 (use ytdl for title)
+
         await sendMessage(chatId, errorMessage);
       }
     }
