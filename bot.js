@@ -75,36 +75,72 @@ const formatSubtitles = (captions) => {
   }).join('\n');
 };
 
-const generateTakeaways = async (title, subtitles) => {
-  const prompt = `
-    I want you to only answer in Russian. 
-    Your goal is to extract key takeaways from the following video transcript. 
-    Takeaways must be concise, informative and easy to read & understand.
-    Each key takeaway should be a list item, of the following format:
-    - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
-    Timestamp in format HH:MM:SS
-    Short key takeaway in three to six words in Russian.
-    - 00:00:05 🤖 ...
-    - 00:02:18 🛡️ ...
-    - 00:05:37 💼 ...
-    Keep emoji relevant and unique to each key takeaway item. 
-    Do not use the same emoji for every takeaway. 
-    Do not render brackets. Do not prepend takeaway with "Key takeaway".
-    [VIDEO TITLE]:
-    ${title}
-    [VIDEO TRANSCRIPT]:
-    ${subtitles}
-    [KEY TAKEAWAYS LIST IN Russian]:
-  `;
+const splitCaptionsIntoChunks = (captions, chunkDurationMinutes = 30) => {
+  const chunks = [];
+  let currentChunk = [];
+  let currentDuration = 0;
 
-  try {
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    return response.text();
-  } catch (error) {
-    console.error('Error generating takeaways:', error);
-    throw new Error('Не удалось сгенерировать краткое содержание');
+  for (const caption of captions) {
+    currentChunk.push(caption);
+    // Convert caption.dur to a number before adding
+    currentDuration += parseFloat(caption.dur);
+
+    if (currentDuration >= chunkDurationMinutes * 60) {
+      console.log('currentDuration', currentDuration)
+
+      chunks.push(currentChunk);
+      currentChunk = [];
+      currentDuration = 0;
+    }
   }
+
+  if (currentChunk.length > 0) {
+    chunks.push(currentChunk);
+  }
+
+  return chunks;
+};
+
+const generateTakeaways = async (title, captions) => {
+  const chunks = splitCaptionsIntoChunks(captions);
+  let allTakeaways = '';
+
+  console.log(chunks.length)
+
+  for (let i = 0; i < chunks.length; i++) {
+    const chunkSubtitles = formatSubtitles(chunks[i]);
+    const prompt = `
+      I want you to only answer in Russian. 
+      Your goal is to extract key takeaways from the following video transcript. 
+      Takeaways must be concise, informative and easy to read & understand.
+      Each key takeaway should be a list item, of the following format:
+      - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
+      Timestamp in format HH:MM:SS
+      Short key takeaway in three to six words in Russian.
+      - 00:00:05 🤖 ...
+      - 00:02:18 🛡️ ...
+      - 00:05:37 💼 ...
+      Keep emoji relevant and unique to each key takeaway item. 
+      Do not use the same emoji for every takeaway. 
+      Do not render brackets. Do not prepend takeaway with "Key takeaway".
+      [VIDEO TITLE]:
+      ${title}
+      [VIDEO TRANSCRIPT]:
+      ${chunkSubtitles}
+      [KEY TAKEAWAYS LIST IN Russian]:
+    `;
+
+    try {
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      allTakeaways += response.text() + '\n\n';
+    } catch (error) {
+      console.error('Error generating takeaways for chunk:', error);
+      throw new Error('Не удалось сгенерировать краткое содержание для части видео');
+    }
+  }
+
+  return allTakeaways.trim();
 };
 
 // Helper function to send messages with error handling
@@ -155,9 +191,7 @@ module.exports = async (req, res) => {
             throw new Error('Для этого видео не найдены субтитры');
           }
 
-          const formattedSubtitles = formatSubtitles(captions);
-
-          const takeaways = await generateTakeaways(title, formattedSubtitles);
+          const takeaways = await generateTakeaways(title, captions);
 
           await sendMessage(chatId, `Краткое содержание видео "${title}":\n\n${takeaways}`);
         } else {
@@ -186,10 +220,11 @@ module.exports = async (req, res) => {
   }
 };
 
-// В конце файла bot.js добавьте:
+// Экспорт функций для тестирования
 module.exports = {
   extractVideoId,
   fetchVideoInfo,
   formatSubtitles,
-  generateTakeaways
+  generateTakeaways,
+  splitCaptionsIntoChunks
 };
