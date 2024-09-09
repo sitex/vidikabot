@@ -35,7 +35,7 @@ const fetchVideoInfo = async (videoId) => {
     // Fetch captions using ytdl-core
     const captionTracks = videoInfo.player_response.captions?.playerCaptionsTracklistRenderer?.captionTracks;
     if (!captionTracks || captionTracks.length === 0) {
-      throw new Error('Субтитры не найдены для этого видео');
+      throw new Error('Субтитры не найдены для этого видео 1');
     }
 
     // Prefer Russian captions, fallback to English
@@ -58,7 +58,7 @@ const fetchVideoInfo = async (videoId) => {
     return result;
   } catch (error) {
     console.error('Error fetching video info:', error);
-    throw new Error('Субтитры не найдены для этого видео');
+    throw new Error(error.message);
   }
 };
 
