@@ -28,39 +28,27 @@ const fetchVideoInfo = async (videoId) => {
   if (cachedInfo) return cachedInfo;
 
   try {
-
     // Fetch video info using ytdl-core
     const videoInfo = await ytdl.getInfo(videoId);
-    // const title = videoInfo.videoDetails.title;
+    const title = videoInfo.videoDetails.title;
 
     // Fetch captions using ytdl-core
     const captionTracks = videoInfo.player_response.captions?.playerCaptionsTracklistRenderer?.captionTracks;
     if (!captionTracks || captionTracks.length === 0) {
-      throw new Error('Субтитры не найдены для этого видео ytdl');
-    }
-
-    // Fetch title using oEmbed API
-    const oembedUrl = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`;
-    const oembedResponse = await axios.get(oembedUrl);
-
-    if (!oembedResponse.data || !oembedResponse.data.title) {
-      throw new Error('Не удалось получить заголовок видео');
-    }
-
-    const title = oembedResponse.data.title;
-
-    // Fetch captions using youtube-captions-scraper
-    const captions = await getSubtitles({
-      videoID: videoId,
-      lang: 'ru' // Try Russian first
-    }).catch(() => getSubtitles({
-      videoID: videoId,
-      lang: 'en' // Fallback to English if Russian is not available
-    }));
-
-    if (!captions || captions.length === 0) {
       throw new Error('Субтитры не найдены для этого видео');
     }
+
+    // Prefer Russian captions, fallback to English
+    const captionTrack = captionTracks.find(track => track.languageCode === 'ru') ||
+        captionTracks.find(track => track.languageCode === 'en');
+
+    if (!captionTrack) {
+      throw new Error('Субтитры на русском или английском не найдены');
+    }
+
+    const captionResponse = await fetch(captionTrack.baseUrl);
+    const captionXml = await captionResponse.text();
+    const captions = parseCaptions(captionXml);
 
     const result = {
       title: title,
@@ -70,7 +58,7 @@ const fetchVideoInfo = async (videoId) => {
     return result;
   } catch (error) {
     console.error('Error fetching video info:', error);
-    throw new Error('Не удалось получить информацию о видео');
+    throw new Error('Субтитры не найдены для этого видео');
   }
 };
 
