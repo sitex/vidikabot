@@ -4,6 +4,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const axios = require('axios');
 const NodeCache = require('node-cache');
 const { getSubtitles } = require('youtube-captions-scraper');
+const ytdl = require('ytdl-core');
 
 // Initialize cache
 const cache = new NodeCache({ stdTTL: 3600 }); // Cache for 1 hour
@@ -27,6 +28,17 @@ const fetchVideoInfo = async (videoId) => {
   if (cachedInfo) return cachedInfo;
 
   try {
+
+    // Fetch video info using ytdl-core
+    const videoInfo = await ytdl.getInfo(videoId);
+    // const title = videoInfo.videoDetails.title;
+
+    // Fetch captions using ytdl-core
+    const captionTracks = videoInfo.player_response.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+    if (!captionTracks || captionTracks.length === 0) {
+      throw new Error('Субтитры не найдены для этого видео ytdl');
+    }
+
     // Fetch title using oEmbed API
     const oembedUrl = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`;
     const oembedResponse = await axios.get(oembedUrl);
@@ -155,15 +167,16 @@ module.exports = async (req, res) => {
       } catch (error) {
         console.error('Ошибка обработки сообщения:', error);
         let errorMessage = 'Произошла ошибка при обработке вашего запроса. ';
-        if (error.message.includes('Неверная ссылка')) {
-          errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
-        } else if (error.message.includes('Субтитры не найдены')) {
-          errorMessage += 'Для этого видео субтитры недоступны. Пожалуйста, попробуйте другое видео с доступными субтитрами.';
-        } else if (error.message.includes('Не удалось сгенерировать краткое содержание')) {
-          errorMessage += 'Не удалось создать краткое содержание. Пожалуйста, попробуйте еще раз или используйте другое видео.';
-        } else {
-          errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
-        }
+        errorMessage += error.message;
+        // if (error.message.includes('Неверная ссылка')) {
+        //   errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
+        // } else if (error.message.includes('Субтитры не найдены')) {
+        //   errorMessage += 'Для этого видео субтитры недоступны. Пожалуйста, попробуйте другое видео с доступными субтитрами.';
+        // } else if (error.message.includes('Не удалось сгенерировать краткое содержание')) {
+        //   errorMessage += 'Не удалось создать краткое содержание. Пожалуйста, попробуйте еще раз или используйте другое видео.';
+        // } else {
+        //   errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
+        // }
         await sendMessage(chatId, errorMessage);
       }
     }
