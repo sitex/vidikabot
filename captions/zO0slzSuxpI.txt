@@ -1,0 +1,1948 @@
+[00:00:00] in order to disprove this you need to go
+[00:00:02] and
+[00:00:03] look at this dude&#39;s table in the real
+[00:00:05] world you can&#39;t just
+[00:00:06] logic your way through whether or not
+[00:00:09] the table is an old packing case
+[00:00:19] the reading for today was a paper called
+[00:00:21] is consciousness a brain
+[00:00:23] process by ut place
+[00:00:27] and in this paper place is introducing
+[00:00:30] and defending
+[00:00:31] a philosophical theory that we haven&#39;t
+[00:00:33] yet talked about and the name of that
+[00:00:34] theory is the
+[00:00:36] mind brain identity theory
+[00:00:40] the point of the mind brain identity
+[00:00:42] theory is that the mind
+[00:00:44] and the brain are identical they&#39;re the
+[00:00:46] same
+[00:00:47] thing or more specifically at least
+[00:00:50] some of the mind some states or
+[00:00:52] processes
+[00:00:53] in the mind in particular for place
+[00:00:56] consciousness that&#39;s a certain subclass
+[00:00:58] of
+[00:00:59] mental events those parts of the mind
+[00:01:03] they are just parts of the brain that is
+[00:01:06] a brief statement of the theory
+[00:01:08] and before we can give a more thorough
+[00:01:10] precise statement of the theory
+[00:01:12] we&#39;re going to have to do a little bit
+[00:01:13] of a recap of some of the relevant
+[00:01:14] material that we&#39;ve discussed in this
+[00:01:16] course already
+[00:01:17] the first theory of mind that we talked
+[00:01:20] about
+[00:01:21] was dualism that was descartes theory
+[00:01:24] it&#39;s the theory that there&#39;s
+[00:01:25] two there&#39;s two kinds of stuff there&#39;s
+[00:01:26] the mind and there&#39;s the body
+[00:01:29] and the mental stuff and the physical
+[00:01:31] stuff are just different kinds of stuff
+[00:01:32] and we saw
+[00:01:33] some attacks on descartes duelist theory
+[00:01:36] of mind
+[00:01:37] the most powerful attack was from
+[00:01:38] princess elizabeth
+[00:01:40] then in contrast to dualism there was
+[00:01:43] the alternative theory
+[00:01:44] physicalism physicalism is the view that
+[00:01:48] everything that exists in the universe
+[00:01:49] including the mind is part of the
+[00:01:52] physical world
+[00:01:53] and so on this theory the mind is not
+[00:01:56] some
+[00:01:56] separate ghostly immaterial thing no no
+[00:02:00] the mind is just some of the physical
+[00:02:02] reality then the question
+[00:02:04] is which of the physical reality is it
+[00:02:06] if you&#39;re a physicalist
+[00:02:07] which part of the physical universe is
+[00:02:10] the mental stuff
+[00:02:11] and the first version of physicalism
+[00:02:13] that we looked at was behaviorism
+[00:02:16] behaviorism said that mental events
+[00:02:20] are just behavioral events they&#39;re
+[00:02:23] things like
+[00:02:23] talking or moving your arms or moving
+[00:02:26] your face or
+[00:02:27] crying stuff like that outwardly
+[00:02:29] observable behavior
+[00:02:30] that&#39;s what the mind just is and then
+[00:02:34] we read an objection to behaviorism that
+[00:02:37] comes from hillary putnam
+[00:02:38] the objection which was seemingly very
+[00:02:40] powerful was all that stuff that
+[00:02:42] involved the super spartans
+[00:02:44] uh thought experiment okay so if you
+[00:02:47] need a recap
+[00:02:48] of any of this stuff then i&#39;ll put some
+[00:02:51] links to the previous
+[00:02:52] uh video lectures about all of that in
+[00:02:54] the description or whatever
+[00:02:56] what we&#39;ve gotten to today is a second
+[00:03:00] version of physicalism right and the
+[00:03:02] second version of physicalism
+[00:03:04] specifies some different stuff in the
+[00:03:07] physical world and says
+[00:03:08] that&#39;s what the mind is or that&#39;s what
+[00:03:10] mental events or mental processes
+[00:03:12] or mental states are and this second
+[00:03:14] version of physicalism that competes
+[00:03:16] with behaviorism if you like
+[00:03:18] well that&#39;s the mind brain identity
+[00:03:21] theory
+[00:03:21] now here&#39;s the thing about the mind
+[00:03:23] brain identity theory
+[00:03:25] as it is presented by ut place
+[00:03:28] in this article from like the 1940s i
+[00:03:31] think
+[00:03:33] he&#39;s not making as general or sweeping
+[00:03:37] of a claim
+[00:03:38] as all the other folks that we&#39;ve been
+[00:03:40] talking about so far
+[00:03:41] everyone else that we&#39;ve been talking
+[00:03:43] about so far they&#39;re all making claims
+[00:03:46] about mental states in general
+[00:03:50] so they&#39;re talking about any states of
+[00:03:52] the mind place
+[00:03:54] thinks that behaviorism is actually
+[00:03:56] correct
+[00:03:57] for certain mental states but he thinks
+[00:03:59] it&#39;s incorrect
+[00:04:00] for other kinds of mental states
+[00:04:03] specifically
+[00:04:04] he thinks that behaviorism doesn&#39;t work
+[00:04:06] for conscious
+[00:04:08] mental states and so he&#39;s introducing
+[00:04:10] his new theory the mind brain identity
+[00:04:12] theory
+[00:04:13] only to apply to this subclass of mental
+[00:04:15] states
+[00:04:16] now what i haven&#39;t done is i haven&#39;t
+[00:04:18] explained to you
+[00:04:19] what the difference between these other
+[00:04:21] mental states and the conscious states
+[00:04:23] are
+[00:04:24] place explains this at the beginning of
+[00:04:25] the article and i&#39;m going to go through
+[00:04:27] it right now
+[00:04:33] so place distinguishes three groups or
+[00:04:36] three
+[00:04:37] categories of mental states the
+[00:04:39] cognitive
+[00:04:40] the volitional and the third one he
+[00:04:43] doesn&#39;t give a name to it
+[00:04:44] but he says that the inner process story
+[00:04:47] is unavoidable for this
+[00:04:48] category if i was gonna label this
+[00:04:50] category i would call it the
+[00:04:52] uh the conscious or the experiential or
+[00:04:54] whatever
+[00:04:55] type of mental state okay so the
+[00:04:57] cognitive ones
+[00:04:59] they involve cognition thinking so it&#39;s
+[00:05:02] things like
+[00:05:03] mental states like knowing believing
+[00:05:05] understanding
+[00:05:06] remembering okay that&#39;s the cognitive
+[00:05:09] category
+[00:05:10] the volitional volitional means having
+[00:05:13] to do with
+[00:05:14] willing so that includes things like
+[00:05:16] wanting or intending
+[00:05:18] these are all the examples that place
+[00:05:19] himself uses
+[00:05:21] in the reading for today now place
+[00:05:24] thinks that for
+[00:05:25] all of the mental states in these two
+[00:05:27] categories the behaviorist picture works
+[00:05:30] fine
+[00:05:30] so he thinks for example that you know
+[00:05:34] believing something we can explain for
+[00:05:37] example that you believe that it&#39;s going
+[00:05:39] to rain
+[00:05:41] partly in terms of the fact that you
+[00:05:43] pick up an umbrella like the physical
+[00:05:45] act of grabbing an umbrella is part of
+[00:05:48] the story that we tell
+[00:05:50] a crucial part of the story according to
+[00:05:51] the behaviorist
+[00:05:53] of what makes it the case that you
+[00:05:56] believe that it&#39;s going to rain
+[00:05:58] so place thinks that behaviorism works
+[00:06:01] for these two
+[00:06:02] but then he thinks that for well
+[00:06:06] let&#39;s talk about sensation like you know
+[00:06:08] sensory experience through your sensory
+[00:06:11] organs
+[00:06:11] when you smell something like you smell
+[00:06:15] i don&#39;t know lilac i don&#39;t know what
+[00:06:17] lilac
+[00:06:18] exactly smells like but okay it has a
+[00:06:21] certain way that it smells or forget
+[00:06:22] lilac
+[00:06:23] peanut butter that&#39;s better peanut
+[00:06:25] butter smells that
+[00:06:26] peanuty way right there&#39;s there&#39;s
+[00:06:30] something that it feels like
+[00:06:32] to smell the peanutty-ness of some
+[00:06:35] peanut butter
+[00:06:36] it has a certain conscious character
+[00:06:39] that&#39;s this
+[00:06:40] of this third type right it feels a
+[00:06:42] certain way
+[00:06:43] to smell or to see or to hear or to
+[00:06:46] taste or whatever that&#39;s sensation
+[00:06:48] the same goes for mental imagery if you
+[00:06:50] imagine something
+[00:06:51] like if you imagine a yellow duck in
+[00:06:54] your head
+[00:06:55] the yellowness of the duck looks a
+[00:06:58] certain way it looks that
+[00:06:59] yellowy way to you all of this stuff
+[00:07:02] this is a third type of mental state
+[00:07:04] or mental event and place thinks
+[00:07:07] that you&#39;re never going to be able to
+[00:07:09] explain these
+[00:07:10] mental things in terms of outwardly
+[00:07:13] observable behavior things that you know
+[00:07:16] moving of your arms and legs and
+[00:07:17] flapping of your lips and that sort of
+[00:07:19] stuff
+[00:07:19] right what things feel like another
+[00:07:22] prominent example that would go in this
+[00:07:24] category
+[00:07:25] this would vaguely fall under sensation
+[00:07:28] certainly under experience
+[00:07:29] or whatever is pain
+[00:07:32] pain feels a certain way there&#39;s
+[00:07:34] different types of pain
+[00:07:35] right take for example burning a burning
+[00:07:39] pain a burning sensation right that
+[00:07:42] feels a certain way and we&#39;re never
+[00:07:44] going to be able to explain that just in
+[00:07:45] terms of behavior
+[00:07:47] and so it&#39;s only for this third
+[00:07:50] category the conscious mental states or
+[00:07:53] the conscious mental events
+[00:07:54] that place is using the mind brain
+[00:07:58] identity theory so he&#39;s just using it to
+[00:08:00] explain this stuff
+[00:08:01] that&#39;s why the title is is consciousness
+[00:08:05] a brain process the question is not
+[00:08:07] whether the mind is a brain process but
+[00:08:10] just
+[00:08:10] some of the mind namely the conscious
+[00:08:12] part of the mind
+[00:08:14] here is another more succinct way of
+[00:08:17] putting the thesis of the mind brain
+[00:08:20] identity theory which we will sometimes
+[00:08:21] just call the identity theory for short
+[00:08:24] here&#39;s a uh you know a specific shorter
+[00:08:27] way of putting that thesis the thesis
+[00:08:29] that place is putting forward
+[00:08:31] in the reading for today
+[00:08:34] pain is brain process b
+[00:08:37] where brain process b is just a generic
+[00:08:40] label for some brain process whatever it
+[00:08:43] turns out to be we&#39;ll ask the
+[00:08:45] neuroscientists about it later right the
+[00:08:47] point is just that
+[00:08:49] pain that&#39;s an example of a conscious
+[00:08:50] mental state is identical with
+[00:08:53] the identity theory it&#39;s identical with
+[00:08:55] some process in the brain we&#39;re going to
+[00:08:56] call it brain process b
+[00:08:58] this is the thesis that place is
+[00:09:01] defending
+[00:09:02] now here is something that place says
+[00:09:05] about this thesis
+[00:09:06] the mind brain identity theory right he
+[00:09:09] says this in the article and it&#39;s super
+[00:09:11] important to understand so i&#39;m going to
+[00:09:12] say it slowly and then i&#39;m going to
+[00:09:14] write it out
+[00:09:15] the identity theory is a scientific
+[00:09:18] hypothesis that cannot be dismissed
+[00:09:21] on logical grounds
+[00:09:27] the identity theory is a scientific
+[00:09:29] hypothesis
+[00:09:30] that cannot be dismissed on logical
+[00:09:32] grounds
+[00:09:34] okay what does that mean i can&#39;t tell
+[00:09:36] you yet
+[00:09:37] in order to explain that to you i have
+[00:09:39] to talk for like
+[00:09:41] a few minutes like three or four minutes
+[00:09:43] about the word
+[00:09:44] is
+[00:09:49] you at least most of you if you&#39;re
+[00:09:52] watching this video not with subtitles
+[00:09:54] or anything like that
+[00:09:55] you are a speaker of the english
+[00:09:57] language and you use the word
+[00:09:59] is all the time maybe you didn&#39;t know
+[00:10:03] there are different kinds of iss&#39;s and
+[00:10:06] they do
+[00:10:06] very different things they just look and
+[00:10:08] sound the same
+[00:10:10] here is one way of starting to divide up
+[00:10:13] some of the different uses of the word
+[00:10:15] is in the english language
+[00:10:18] you&#39;ve got the is of identity and the is
+[00:10:21] of
+[00:10:21] predication write all of this down if
+[00:10:24] you&#39;re enrolled in this course
+[00:10:25] all of this will be on the exam the is
+[00:10:28] of identity
+[00:10:29] here are the important facts about this
+[00:10:31] use of the word is
+[00:10:33] on both sides of the word is are nouns
+[00:10:37] or noun phrases and it says
+[00:10:40] that when you use the word is like this
+[00:10:42] the is of identity you say these two
+[00:10:44] things are identical
+[00:10:45] they&#39;re the same right so superman
+[00:10:48] that&#39;s a that&#39;s a name
+[00:10:50] for a dude and clark kent that&#39;s also a
+[00:10:52] name
+[00:10:53] for a dude both of these are a certain
+[00:10:56] kind of noun phrase
+[00:10:57] right and there&#39;s two noun phrases and
+[00:10:59] you just slap them on either side of the
+[00:11:01] word
+[00:11:01] is and and the word is functions in the
+[00:11:04] middle to say that these
+[00:11:05] are the very same thing that is
+[00:11:08] different
+[00:11:09] from the is of predication where the
+[00:11:11] thing
+[00:11:12] that&#39;s on the right side here
+[00:11:15] six feet tall the thing on the right
+[00:11:17] side of the word
+[00:11:18] is in this sentence is not a noun phrase
+[00:11:22] this isn&#39;t a name
+[00:11:23] for an object or some way of referring
+[00:11:25] to an object this is a characteristic
+[00:11:28] of the object right this is an adjective
+[00:11:32] superman is six feet tall
+[00:11:35] this is not saying that there&#39;s two
+[00:11:37] things superman and six feet tall and
+[00:11:39] they&#39;re identical no no no
+[00:11:40] it&#39;s predicating of superman
+[00:11:44] describing superman as having some
+[00:11:47] characteristic
+[00:11:48] what you&#39;ve got over here is an
+[00:11:50] adjectival clause i guess it&#39;s called i
+[00:11:52] don&#39;t know what this is called but
+[00:11:53] something like that
+[00:11:54] this is not a noun phrase okay do you
+[00:11:57] see how these are
+[00:11:58] totally different in this case the word
+[00:12:01] is
+[00:12:02] is taking two different things and
+[00:12:04] saying that they&#39;re one thing
+[00:12:05] superman and clark kent are one thing
+[00:12:08] in this case the is the word is
+[00:12:12] is taking a thing superman and
+[00:12:15] describing him
+[00:12:16] here&#39;s another example the car is a blue
+[00:12:19] vehicle
+[00:12:21] a blue vehicle that&#39;s a noun phrase it
+[00:12:24] specifies a thing
+[00:12:25] a blue vehicle and then you&#39;ve got the
+[00:12:27] car
+[00:12:28] that&#39;s another noun phrase it specifies
+[00:12:30] a thing the car
+[00:12:31] and what the word is is doing is it&#39;s
+[00:12:34] saying that these two things are one
+[00:12:35] thing
+[00:12:37] but notice how different this sentence
+[00:12:39] is the car is blue
+[00:12:41] what you&#39;ve got over here is not some
+[00:12:44] expression that refers to an object
+[00:12:46] no no this is an adjective blue
+[00:12:49] the car is blue it takes something
+[00:12:53] the word is takes an object
+[00:12:56] that&#39;s being referred to here and it
+[00:12:58] just describes that object
+[00:13:00] so these two sentences are similar in
+[00:13:03] some sense in that they&#39;re
+[00:13:05] you know picking out the same ish uh
+[00:13:09] state of affairs in the world the state
+[00:13:11] of affairs of there being a car and
+[00:13:12] it and it having a blue color but this
+[00:13:15] sentence
+[00:13:15] is using the is of identity to say that
+[00:13:17] two things are one thing
+[00:13:19] and this sentence is using the is of
+[00:13:21] predication to say of one thing
+[00:13:23] that it has some characteristic okay so
+[00:13:27] you need to believe me and not just
+[00:13:29] because i&#39;m an authority figure or
+[00:13:31] something like that you need to
+[00:13:32] understand
+[00:13:33] why i&#39;m saying this you need to believe
+[00:13:34] me when i say that the is of identity
+[00:13:36] and the is of predication
+[00:13:37] are just two different words
+[00:13:40] now we need to make another distinction
+[00:13:44] among different uses of is
+[00:13:51] so there are two different kinds of
+[00:13:54] is-is of identity there&#39;s an is of
+[00:13:56] definition
+[00:13:57] and an is of composition now in both
+[00:14:00] cases
+[00:14:01] what sentences that use this kind of is
+[00:14:05] are doing is that they&#39;re saying that
+[00:14:08] two things are identical
+[00:14:09] so what we&#39;re going to find on both
+[00:14:11] sides of the word is
+[00:14:12] in both cases is we&#39;re going to find
+[00:14:14] noun phrases here&#39;s an example
+[00:14:16] a square that&#39;s a noun phrase it picks
+[00:14:19] out a thing a square
+[00:14:21] is an equilateral rectangle
+[00:14:24] an equilateral rectangle that also picks
+[00:14:27] out something so
+[00:14:28] this is the is of identity but notice
+[00:14:32] that this fact the fact that a square is
+[00:14:34] an equilateral tr
+[00:14:36] rectangle right like you guys know about
+[00:14:38] squares
+[00:14:39] a square is a rectangle where all of the
+[00:14:44] laterals all of the sides are
+[00:14:47] equal in length that&#39;s a square okay
+[00:14:50] so a square is an equilateral rectangle
+[00:14:54] that fact that these two things a square
+[00:14:57] and an equilateral rectangle are just
+[00:14:58] one thing they&#39;re identical
+[00:15:00] that fact a fact stated with the is
+[00:15:03] identity
+[00:15:03] is true by definition that&#39;s just the
+[00:15:06] definition
+[00:15:07] of a square all we had to do
+[00:15:10] to figure out that a square was an
+[00:15:13] equilateral rectangle
+[00:15:14] is look up the word square in a
+[00:15:16] dictionary
+[00:15:17] we just needed the definition we didn&#39;t
+[00:15:19] know need to go discover any squares in
+[00:15:22] the wild
+[00:15:23] we can&#39;t do that because squares don&#39;t
+[00:15:24] exist in the wild there are no squares
+[00:15:27] you ever seen a square no you haven&#39;t
+[00:15:29] squares are
+[00:15:30] two dimensional abstractions we made
+[00:15:33] them up
+[00:15:33] anyway it&#39;s nonetheless true that a
+[00:15:36] square is an equilateral rectangle
+[00:15:38] this is an is the sentence this sentence
+[00:15:42] uses the word is it&#39;s a version of the
+[00:15:44] is of identity but it&#39;s true by
+[00:15:46] definition
+[00:15:47] compare that to this sentence which uses
+[00:15:51] what place calls the is of composition
+[00:15:55] his table is an old packing case
+[00:15:59] that&#39;s place&#39;s example from the 1940s or
+[00:16:02] whatever
+[00:16:02] right an old packing case i guess is
+[00:16:05] just like a box
+[00:16:06] it&#39;s a box okay so someone obviously
+[00:16:10] has a a box and they&#39;re using the box as
+[00:16:13] a table
+[00:16:14] right so you go into their house and
+[00:16:16] you&#39;re offered some food
+[00:16:17] to eat on their table but the table is
+[00:16:20] just a box
+[00:16:22] because this person can&#39;t afford a a
+[00:16:25] regular table or they haven&#39;t gotten one
+[00:16:27] yet because they just moved and they&#39;re
+[00:16:28] using an old packing case they&#39;re using
+[00:16:30] a box or something
+[00:16:31] whatever the point is this sentence his
+[00:16:34] table is an old packing case
+[00:16:36] that uses the is of identity it says of
+[00:16:38] two things his table
+[00:16:39] and an old packing case that they&#39;re one
+[00:16:42] thing that they&#39;re identical
+[00:16:43] right noun phrases on both sides of the
+[00:16:45] word is
+[00:16:46] so this is the is of identity but it&#39;s
+[00:16:49] not
+[00:16:50] true by definition it&#39;s not like the
+[00:16:52] definitions of the words
+[00:16:54] table and packing case or whatever
+[00:16:58] make it guaranteed that
+[00:17:01] his table is an old packing case no
+[00:17:04] a square is an equilateral rectangle
+[00:17:07] that&#39;s true that&#39;s guaranteed to be true
+[00:17:09] by the definition of square
+[00:17:11] but the definition of table or none of
+[00:17:13] the definitions in this word
+[00:17:14] guarantee this to be true it just
+[00:17:17] happens
+[00:17:18] that this particular table is composed
+[00:17:22] or made up of an old
+[00:17:25] box or whatever true statements
+[00:17:28] that use the is of definition their true
+[00:17:31] what we say in philosophy they&#39;re true
+[00:17:33] necessarily necessary just means it must
+[00:17:38] be
+[00:17:39] it&#39;s necessarily the case it must be the
+[00:17:41] case
+[00:17:42] that a square is an equilateral
+[00:17:44] rectangle that&#39;s because it&#39;s part of
+[00:17:46] the definition
+[00:17:47] of square but facts that are stated
+[00:17:51] with the is of composition they&#39;re not
+[00:17:53] necessary they are as we say
+[00:17:55] contingent contingent
+[00:17:59] facts are facts that just happened to be
+[00:18:01] the case
+[00:18:02] it didn&#39;t need to be the case but it
+[00:18:03] just is it just is that this
+[00:18:06] guy&#39;s table is a packing case or
+[00:18:09] whatever
+[00:18:09] his table could have been made of all
+[00:18:11] sorts of different stuff maybe it could
+[00:18:12] have been made of like
+[00:18:14] metal melded in some shape or whatever
+[00:18:16] you could make a table out of that
+[00:18:18] he didn&#39;t want that table or he couldn&#39;t
+[00:18:20] afford it or whatever
+[00:18:21] it just so happens that his table is an
+[00:18:24] old packing case
+[00:18:25] it&#39;s a contingent fact it&#39;s not a
+[00:18:27] necessary fact
+[00:18:29] here is the last important piece of
+[00:18:30] information that you need
+[00:18:32] about all of these different is all of
+[00:18:35] these different uses of the word
+[00:18:37] is in the english language this is all
+[00:18:38] going to be relevant by the way
+[00:18:40] claims of this sort that use the is of
+[00:18:42] definition
+[00:18:44] they can be dismissed on logical grounds
+[00:18:48] all you have to do to prove one of these
+[00:18:50] claims false if it is false
+[00:18:53] all you&#39;d have to do is know the
+[00:18:55] definitions
+[00:18:56] of the words and use logic use just your
+[00:18:59] mind
+[00:19:00] thinking clearly right you&#39;d find some
+[00:19:03] contradiction
+[00:19:04] in there some logical contradiction if
+[00:19:06] you knew the definitions of all the
+[00:19:07] words
+[00:19:08] you can disprove a claim of this kind a
+[00:19:11] claim
+[00:19:12] consisting of the use of the is of
+[00:19:14] definition you can disprove one of these
+[00:19:16] if it can be disproved at all by just
+[00:19:20] thinking really clearly that&#39;s different
+[00:19:23] from the is of composition a claim of
+[00:19:26] this kind if it&#39;s false
+[00:19:28] in order to disprove this you need to go
+[00:19:31] and
+[00:19:31] look at this dude&#39;s table in the real
+[00:19:34] world you can&#39;t just
+[00:19:35] logic your way through whether or not
+[00:19:37] the table is an old packing case
+[00:19:39] just by knowing the definitions of the
+[00:19:40] word and thinking clearly no no
+[00:19:42] you gotta show up at his apartment or
+[00:19:44] whatever right
+[00:19:46] and see oh it&#39;s uh
+[00:19:49] the table is not an old packing case
+[00:19:51] it&#39;s really a
+[00:19:53] a rock or a bunch of glass and metal
+[00:19:56] or a wooden table that was purchased at
+[00:19:59] ikea or whatever
+[00:20:01] okay so these claims right here claims
+[00:20:04] using the is of composition they just
+[00:20:07] happen to be true when they are true and
+[00:20:08] if you want to disprove them
+[00:20:10] you have to use some science these are
+[00:20:13] scientific hypotheses you have to go and
+[00:20:15] investigate in the world the way
+[00:20:16] scientists do
+[00:20:18] if you want to disprove them claims that
+[00:20:21] use the is of definition
+[00:20:23] they are not scientific claims they are
+[00:20:27] claims well about the meanings of
+[00:20:30] words and you can disprove claims about
+[00:20:33] the meanings of words just by knowing
+[00:20:35] the meanings and using
+[00:20:36] basic logic so you need to understand
+[00:20:39] all of this there&#39;ll be lots of
+[00:20:40] questions
+[00:20:41] about this sort of stuff on the exam
+[00:20:43] you&#39;ll i don&#39;t know maybe you&#39;ll have to
+[00:20:44] like
+[00:20:45] categorize different sentences as as
+[00:20:47] using one of these is-is or something
+[00:20:49] like that that&#39;s something i might do
+[00:20:51] on the exam anyway what&#39;s the point
+[00:20:54] of all this stuff about the word is
+[00:20:57] here&#39;s the point
+[00:20:58] the mind-brain identity theory
+[00:21:01] is a claim that uses the word is
+[00:21:05] pain is brain process v well
+[00:21:09] which is is this the first thing is
+[00:21:13] it&#39;s definitely not the is of
+[00:21:16] predication
+[00:21:17] right the is of predication has an
+[00:21:19] adjective
+[00:21:20] on one side on the right side
+[00:21:23] but brain process b is not
+[00:21:26] an adjectival clause or whatever it&#39;s a
+[00:21:29] noun phrase
+[00:21:30] it picks out a certain brain process we
+[00:21:32] don&#39;t know which one
+[00:21:33] we&#39;re just using this placeholder the
+[00:21:34] letter b or whatever but
+[00:21:36] this is a noun phrase and this is a noun
+[00:21:39] phrase
+[00:21:39] pain is brain process b so whatever kind
+[00:21:43] of
+[00:21:43] is this is it&#39;s one of the is&#39;s
+[00:21:46] of identity well which one is it
+[00:21:49] well that&#39;s why place brings all of this
+[00:21:52] up place thinks
+[00:21:53] that a lot of people are trying to
+[00:21:55] disprove this thesis
+[00:21:57] on logical grounds just by thinking
+[00:22:00] about the definitions of the word
+[00:22:02] and what&#39;s conceivable or whatever if
+[00:22:05] they&#39;re trying to disprove
+[00:22:07] this claim in that way then they must be
+[00:22:10] thinking
+[00:22:10] that it is an instance of the is of
+[00:22:13] definition
+[00:22:14] this is right here they must be thinking
+[00:22:16] these folks who are objecting
+[00:22:18] to the mind brain identity theory if
+[00:22:20] they&#39;re objecting just by coming up with
+[00:22:22] some
+[00:22:23] with some you know fictional examples or
+[00:22:26] conceptual examples if they&#39;re just
+[00:22:27] think they&#39;re using
+[00:22:28] logic to disprove this claim then they
+[00:22:30] must think it&#39;s a claim
+[00:22:32] using the is of definition they must
+[00:22:34] think that
+[00:22:35] pain is meant to be by definition of the
+[00:22:37] word
+[00:22:38] brain process b but place is saying
+[00:22:41] no all of those attacks on the mind
+[00:22:44] brain identity theory won&#39;t work
+[00:22:46] because the mind brain identity theory
+[00:22:48] is not a claim
+[00:22:49] that uses the is of definition
+[00:22:52] no rather it&#39;s a claim that uses
+[00:22:55] the is of composition this is just a
+[00:22:58] contingent claim it&#39;s a scientific
+[00:23:00] hypothesis
+[00:23:02] okay so now we&#39;re ready to understand
+[00:23:04] this sentence that i wrote up however
+[00:23:06] many minutes ago
+[00:23:07] the identity theory the mind brain
+[00:23:09] identity theory that place is defending
+[00:23:11] in this article
+[00:23:12] is a scientific hypothesis it&#39;s one of
+[00:23:16] these
+[00:23:17] it&#39;s a scientific hypothesis and it
+[00:23:20] cannot be
+[00:23:21] dismissed on logical grounds you can&#39;t
+[00:23:24] just
+[00:23:25] prove that it&#39;s a false claim the
+[00:23:28] identity theory
+[00:23:29] by just thinking logically because it&#39;s
+[00:23:32] not
+[00:23:32] a case where some some identity
+[00:23:35] statement is made using the is of
+[00:23:36] definition
+[00:23:38] so what this means is that the thesis
+[00:23:41] that place is putting forward in this
+[00:23:43] article the mind brain identity theory
+[00:23:45] is a thesis stated with the is of
+[00:23:47] composition not the is of definition
+[00:23:50] okay you got that i&#39;m going to say it
+[00:23:51] one more time the thesis put forward
+[00:23:54] in this article by ut place the mind
+[00:23:57] brain identity theory that&#39;s the thesis
+[00:23:58] it&#39;s right here
+[00:23:59] pain is brain process b that&#39;s one
+[00:24:02] instance of the
+[00:24:03] thesis having to do with one conscious
+[00:24:05] mental state but we could do it in terms
+[00:24:07] of others
+[00:24:08] we could do it in terms of like you know
+[00:24:10] i don&#39;t know um a tickling sensation
+[00:24:12] instead of pain or whatever but the
+[00:24:13] point is
+[00:24:14] this statement pain is brain process b
+[00:24:17] it&#39;s a statement made with the is of
+[00:24:18] composition not
+[00:24:20] the is of definition and because it&#39;s a
+[00:24:23] statement
+[00:24:24] about a contingent statement about what
+[00:24:26] just happens to be
+[00:24:28] the case the only way you can disprove
+[00:24:30] it is by doing
+[00:24:31] science or at least that&#39;s what place
+[00:24:34] thinks
+[00:24:34] okay so let&#39;s go through a passage from
+[00:24:37] the reading
+[00:24:38] where place admits happily
+[00:24:41] that if you interpret this statement
+[00:24:43] pain is brain process b
+[00:24:45] if you interpret that statement as a an
+[00:24:47] instance of the is of definition then of
+[00:24:49] course
+[00:24:50] this claim is going to be easily
+[00:24:52] disprovable
+[00:24:53] here&#39;s what he says this is on page 56
+[00:24:56] in the article that we read for today
+[00:24:58] to say that statements about
+[00:25:00] consciousness
+[00:25:01] our statements about brain processes is
+[00:25:04] manifestly false
+[00:25:05] okay let&#39;s just pause actually for a
+[00:25:07] second what he&#39;s saying there is that
+[00:25:09] if you think that this is true like a
+[00:25:12] statement about
+[00:25:13] a conscious mental process like pain is
+[00:25:16] well it just
+[00:25:17] means the same thing it&#39;s the same
+[00:25:19] statement
+[00:25:20] it has the same meaning as a statement
+[00:25:22] about brain process b
+[00:25:24] then of course that claim is false the
+[00:25:26] mind brain identity theory is false
+[00:25:28] if you understand it as a claim about
+[00:25:30] the meanings of words
+[00:25:32] right that&#39;s what he&#39;s saying there he
+[00:25:34] keeps going
+[00:25:35] this is shown oh and now he&#39;s going to
+[00:25:37] list three ways in which you can easily
+[00:25:40] demonstrate
+[00:25:41] that pain is brain process b understood
+[00:25:44] as a use of the is of definition is just
+[00:25:46] going to be wrong here are the three
+[00:25:47] ways
+[00:25:48] this is shown a by the fact that you can
+[00:25:51] describe your sensations and mental
+[00:25:53] imagery
+[00:25:54] without knowing anything about your
+[00:25:55] brain process or even that such things
+[00:25:58] exist right so you can describe yourself
+[00:26:01] as feeling pain
+[00:26:03] oh i have a terrible pain in my leg you
+[00:26:06] can say that meaningfully and understand
+[00:26:08] exactly what you&#39;re saying without
+[00:26:10] knowing about any brain processes i mean
+[00:26:12] people have been saying things like that
+[00:26:14] before they knew that the brain existed
+[00:26:17] inside of the skull or before that they
+[00:26:19] knew that the brain
+[00:26:21] that was in there was the seat of the
+[00:26:23] mind or something like that i mean
+[00:26:25] you know people used to think all sorts
+[00:26:27] of different stuff about the body
+[00:26:29] but they still could meaningfully talk
+[00:26:32] about
+[00:26:33] mental states or mental sensations so
+[00:26:36] it can&#39;t be that pain is by definition
+[00:26:38] brain process b
+[00:26:39] because you can know the definition of
+[00:26:41] this you can understand what pain is and
+[00:26:43] not know anything about the brain
+[00:26:44] okay and then he keeps going place gives
+[00:26:46] a second
+[00:26:48] reason why this claim understood as a
+[00:26:51] claim of the is of definition
+[00:26:52] is just obviously false he says be
+[00:26:56] by the fact that statements about one&#39;s
+[00:26:58] consciousness
+[00:26:59] and statements about one&#39;s brain
+[00:27:01] processes are verified
+[00:27:03] in entirely different ways right that so
+[00:27:05] you check
+[00:27:06] whether someone is in pain by maybe
+[00:27:08] asking them whether they&#39;re in pain
+[00:27:10] or you check whether you are yourself in
+[00:27:12] pain by just
+[00:27:14] attending to whether you&#39;re how you&#39;re
+[00:27:16] feeling
+[00:27:17] but you check whether you have a certain
+[00:27:19] brain process or whether someone else
+[00:27:20] has a certain brain process by like
+[00:27:22] going into a brain scanner
+[00:27:23] so you check them in totally different
+[00:27:25] ways okay and then he says
+[00:27:27] and c by the fact that there is nothing
+[00:27:30] self-contradictory
+[00:27:31] about the statement x has a pain but
+[00:27:33] there is nothing going on in his brain
+[00:27:36] that claim x has a pain but there&#39;s
+[00:27:38] nothing going on in his brain
+[00:27:40] or her brain right that claim
+[00:27:44] may be false it may be impossible
+[00:27:47] but it&#39;s not false or demonstrably
+[00:27:50] impossible
+[00:27:51] because of the meanings of the words so
+[00:27:54] therefore
+[00:27:55] this claim if understood as using the is
+[00:27:57] of definition
+[00:27:58] is just totally false that&#39;s what place
+[00:28:00] has said right there
+[00:28:02] but place claims that you&#39;re just not
+[00:28:05] going to be able to disprove
+[00:28:07] the mind brain identity theory with any
+[00:28:09] of that because the mind brain identity
+[00:28:11] theory
+[00:28:12] is a scientific hypothesis that uses the
+[00:28:15] is of composition
+[00:28:16] here&#39;s what he says this is also on page
+[00:28:18] 56 in the reading
+[00:28:20] those who contend that the statement
+[00:28:23] consciousness is a brain process
+[00:28:25] is logically untenable base their claim
+[00:28:27] i suspect
+[00:28:28] on the mistaken assumption that if the
+[00:28:30] meanings of two statements or
+[00:28:31] expressions
+[00:28:32] are quite unconnected they cannot both
+[00:28:34] provide an
+[00:28:35] adequate characterization of the same
+[00:28:37] object or state of affairs
+[00:28:39] if something is a state of consciousness
+[00:28:41] it cannot be a brain process
+[00:28:43] since there is nothing
+[00:28:44] self-contradictory in supposing that
+[00:28:46] someone feels a pain
+[00:28:47] when there is nothing happening inside
+[00:28:49] his skull that last bit of that last
+[00:28:51] sentence that was
+[00:28:52] he was speaking in the voice of the of
+[00:28:54] the foolish
+[00:28:55] person who is attacking the mind brain
+[00:28:58] identity theory
+[00:28:59] okay then he says by the same token we
+[00:29:01] might be led to conclude
+[00:29:02] that a table cannot be an old packing
+[00:29:05] case since there is nothing
+[00:29:06] self-contradictory in supposing that
+[00:29:08] someone has a table
+[00:29:09] but is not in possession of an old
+[00:29:12] packing case
+[00:29:13] the point there is just you can&#39;t
+[00:29:15] disprove
+[00:29:16] a scientific hypothesis that uses the is
+[00:29:20] of composition
+[00:29:21] with just some some thought experiment
+[00:29:24] where you say well it&#39;s
+[00:29:25] it&#39;s coherent to imagine one without the
+[00:29:28] other
+[00:29:28] right it&#39;s coherent to imagine a table
+[00:29:30] without an old packing case
+[00:29:31] therefore his table can&#39;t be an old
+[00:29:33] packing case no that&#39;s crazy
+[00:29:35] because the claim that his table is an
+[00:29:37] old packing case is a contingent claim
+[00:29:39] just about what his table happens to be
+[00:29:41] made of
+[00:29:42] and so you can&#39;t disprove it with some
+[00:29:43] thought experiment
+[00:29:45] so place is putting forward and
+[00:29:48] defending from
+[00:29:49] some common objections the mind brain
+[00:29:52] identity theory
+[00:29:53] which you know as a sort of specific
+[00:29:55] instance we can think of it as the claim
+[00:29:56] that
+[00:29:57] pain or any other conscious mental state
+[00:29:59] is brain process b
+[00:30:00] or whatever other brain process and he&#39;s
+[00:30:03] defending this thesis
+[00:30:04] by saying that this claim is just a
+[00:30:07] scientific claim
+[00:30:09] so here&#39;s a sort of good clear evocative
+[00:30:13] passage where he further explains
+[00:30:16] scientific claims that use the is of
+[00:30:18] composition
+[00:30:19] this comes on page 57 in the reading
+[00:30:22] a good example here is the case of the
+[00:30:25] cloud
+[00:30:26] and the mass of droplets or other
+[00:30:28] particles in suspension
+[00:30:30] a cloud is a large semi-transparent mass
+[00:30:33] with a fleecy texture suspended in the
+[00:30:36] atmosphere
+[00:30:36] whose shape is subject to continual and
+[00:30:39] kaleidoscopic
+[00:30:40] change okay let&#39;s just pause there yeah
+[00:30:42] okay whatever so like a cloud
+[00:30:44] is just some like particles in the air
+[00:30:47] that&#39;s what a cloud is
+[00:30:48] but that&#39;s a scientific claim it just
+[00:30:50] turned out that clouds were
+[00:30:52] uh you know a bunch of droplets in the
+[00:30:55] air someone had to discover that
+[00:30:57] it&#39;s not the definition of the word
+[00:30:59] cloud because we had the word cloud
+[00:31:02] and it had a definition and it described
+[00:31:05] some things that we saw in the sky
+[00:31:07] long before anyone ever figured out what
+[00:31:09] clouds were
+[00:31:10] someone might have thought for some
+[00:31:12] amount of time and they could have been
+[00:31:14] coherent and thinking this
+[00:31:15] that the cloud was was like cotton candy
+[00:31:18] or whatever
+[00:31:19] you have to have some scientists who go
+[00:31:21] up in a balloon to investigate clouds
+[00:31:23] in order to figure out what clouds are
+[00:31:25] or you have to explain to a child who
+[00:31:28] already knows the definition of the word
+[00:31:30] cloud
+[00:31:31] the meaning of the word you have to
+[00:31:33] explain to a child
+[00:31:34] oh it turns out clouds are just
+[00:31:36] particles suspended in the atmosphere
+[00:31:39] mostly water droplets okay so he
+[00:31:42] continues
+[00:31:43] when observed at close quarters however
+[00:31:45] it is found to consist of a mass of tiny
+[00:31:47] particles
+[00:31:48] usually water droplets in continuous
+[00:31:51] motion
+[00:31:52] on the basis of this second observation
+[00:31:54] we conclude that a cloud is a mass of
+[00:31:56] tiny particles and nothing else
+[00:31:58] but there is no logical connection in
+[00:32:00] our language between
+[00:32:01] a cloud or the word cloud and a mass of
+[00:32:04] tiny particles or the phrase
+[00:32:06] mass of tiny particles there is nothing
+[00:32:08] self-contradictory
+[00:32:09] in talking about a cloud which is not
+[00:32:11] composed of tiny particles in suspension
+[00:32:14] there is no contradiction involved in
+[00:32:16] supposing that clouds
+[00:32:17] consist of a dense mass of fibrous
+[00:32:20] tissue indeed
+[00:32:21] such a consistency seems to be implied
+[00:32:23] by many of the functions
+[00:32:25] performed by clouds in fairy stories and
+[00:32:27] mythology
+[00:32:41] in suspension and the cloud okay that&#39;s
+[00:32:44] the punch line
+[00:32:45] right all of these thought experiments
+[00:32:48] that philosophers give
+[00:32:49] thought experiments about someone who&#39;s
+[00:32:51] feeling pain but doesn&#39;t have a brain at
+[00:32:53] all or whatever
+[00:32:54] right or nothing&#39;s going on in their
+[00:32:56] brain those kind of thought experiments
+[00:32:58] they show that the word pain and the
+[00:33:01] phrase
+[00:33:02] brain process whatever right those words
+[00:33:05] or phrases
+[00:33:06] mean different things but from the fact
+[00:33:08] that the words or phrases have different
+[00:33:11] meanings
+[00:33:11] it does not follow place is pointing out
+[00:33:14] that there isn&#39;t just one thing and that
+[00:33:17] these two
+[00:33:18] descriptions are descriptions of one and
+[00:33:20] the same thing
+[00:33:22] just like the fact that cloud and
+[00:33:24] massive tiny particles
+[00:33:26] are two phrases in the english language
+[00:33:28] that have different meanings
+[00:33:29] but it still turns out that a cloud just
+[00:33:32] is a mass of tiny
+[00:33:33] particles okay so that is the mind brain
+[00:33:37] identity theory
+[00:33:38] and next time we&#39;re going to get an
+[00:33:40] attack on that
+[00:33:41] thesis that claim about the mind
+[00:00:00] in order to disprove this you need to go
+[00:00:02] and
+[00:00:03] look at this dude&#39;s table in the real
+[00:00:05] world you can&#39;t just
+[00:00:06] logic your way through whether or not
+[00:00:09] the table is an old packing case
+[00:00:19] the reading for today was a paper called
+[00:00:21] is consciousness a brain
+[00:00:23] process by ut place
+[00:00:27] and in this paper place is introducing
+[00:00:30] and defending
+[00:00:31] a philosophical theory that we haven&#39;t
+[00:00:33] yet talked about and the name of that
+[00:00:34] theory is the
+[00:00:36] mind brain identity theory
+[00:00:40] the point of the mind brain identity
+[00:00:42] theory is that the mind
+[00:00:44] and the brain are identical they&#39;re the
+[00:00:46] same
+[00:00:47] thing or more specifically at least
+[00:00:50] some of the mind some states or
+[00:00:52] processes
+[00:00:53] in the mind in particular for place
+[00:00:56] consciousness that&#39;s a certain subclass
+[00:00:58] of
+[00:00:59] mental events those parts of the mind
+[00:01:03] they are just parts of the brain that is
+[00:01:06] a brief statement of the theory
+[00:01:08] and before we can give a more thorough
+[00:01:10] precise statement of the theory
+[00:01:12] we&#39;re going to have to do a little bit
+[00:01:13] of a recap of some of the relevant
+[00:01:14] material that we&#39;ve discussed in this
+[00:01:16] course already
+[00:01:17] the first theory of mind that we talked
+[00:01:20] about
+[00:01:21] was dualism that was descartes theory
+[00:01:24] it&#39;s the theory that there&#39;s
+[00:01:25] two there&#39;s two kinds of stuff there&#39;s
+[00:01:26] the mind and there&#39;s the body
+[00:01:29] and the mental stuff and the physical
+[00:01:31] stuff are just different kinds of stuff
+[00:01:32] and we saw
+[00:01:33] some attacks on descartes duelist theory
+[00:01:36] of mind
+[00:01:37] the most powerful attack was from
+[00:01:38] princess elizabeth
+[00:01:40] then in contrast to dualism there was
+[00:01:43] the alternative theory
+[00:01:44] physicalism physicalism is the view that
+[00:01:48] everything that exists in the universe
+[00:01:49] including the mind is part of the
+[00:01:52] physical world
+[00:01:53] and so on this theory the mind is not
+[00:01:56] some
+[00:01:56] separate ghostly immaterial thing no no
+[00:02:00] the mind is just some of the physical
+[00:02:02] reality then the question
+[00:02:04] is which of the physical reality is it
+[00:02:06] if you&#39;re a physicalist
+[00:02:07] which part of the physical universe is
+[00:02:10] the mental stuff
+[00:02:11] and the first version of physicalism
+[00:02:13] that we looked at was behaviorism
+[00:02:16] behaviorism said that mental events
+[00:02:20] are just behavioral events they&#39;re
+[00:02:23] things like
+[00:02:23] talking or moving your arms or moving
+[00:02:26] your face or
+[00:02:27] crying stuff like that outwardly
+[00:02:29] observable behavior
+[00:02:30] that&#39;s what the mind just is and then
+[00:02:34] we read an objection to behaviorism that
+[00:02:37] comes from hillary putnam
+[00:02:38] the objection which was seemingly very
+[00:02:40] powerful was all that stuff that
+[00:02:42] involved the super spartans
+[00:02:44] uh thought experiment okay so if you
+[00:02:47] need a recap
+[00:02:48] of any of this stuff then i&#39;ll put some
+[00:02:51] links to the previous
+[00:02:52] uh video lectures about all of that in
+[00:02:54] the description or whatever
+[00:02:56] what we&#39;ve gotten to today is a second
+[00:03:00] version of physicalism right and the
+[00:03:02] second version of physicalism
+[00:03:04] specifies some different stuff in the
+[00:03:07] physical world and says
+[00:03:08] that&#39;s what the mind is or that&#39;s what
+[00:03:10] mental events or mental processes
+[00:03:12] or mental states are and this second
+[00:03:14] version of physicalism that competes
+[00:03:16] with behaviorism if you like
+[00:03:18] well that&#39;s the mind brain identity
+[00:03:21] theory
+[00:03:21] now here&#39;s the thing about the mind
+[00:03:23] brain identity theory
+[00:03:25] as it is presented by ut place
+[00:03:28] in this article from like the 1940s i
+[00:03:31] think
+[00:03:33] he&#39;s not making as general or sweeping
+[00:03:37] of a claim
+[00:03:38] as all the other folks that we&#39;ve been
+[00:03:40] talking about so far
+[00:03:41] everyone else that we&#39;ve been talking
+[00:03:43] about so far they&#39;re all making claims
+[00:03:46] about mental states in general
+[00:03:50] so they&#39;re talking about any states of
+[00:03:52] the mind place
+[00:03:54] thinks that behaviorism is actually
+[00:03:56] correct
+[00:03:57] for certain mental states but he thinks
+[00:03:59] it&#39;s incorrect
+[00:04:00] for other kinds of mental states
+[00:04:03] specifically
+[00:04:04] he thinks that behaviorism doesn&#39;t work
+[00:04:06] for conscious
+[00:04:08] mental states and so he&#39;s introducing
+[00:04:10] his new theory the mind brain identity
+[00:04:12] theory
+[00:04:13] only to apply to this subclass of mental
+[00:04:15] states
+[00:04:16] now what i haven&#39;t done is i haven&#39;t
+[00:04:18] explained to you
+[00:04:19] what the difference between these other
+[00:04:21] mental states and the conscious states
+[00:04:23] are
+[00:04:24] place explains this at the beginning of
+[00:04:25] the article and i&#39;m going to go through
+[00:04:27] it right now
+[00:04:33] so place distinguishes three groups or
+[00:04:36] three
+[00:04:37] categories of mental states the
+[00:04:39] cognitive
+[00:04:40] the volitional and the third one he
+[00:04:43] doesn&#39;t give a name to it
+[00:04:44] but he says that the inner process story
+[00:04:47] is unavoidable for this
+[00:04:48] category if i was gonna label this
+[00:04:50] category i would call it the
+[00:04:52] uh the conscious or the experiential or
+[00:04:54] whatever
+[00:04:55] type of mental state okay so the
+[00:04:57] cognitive ones
+[00:04:59] they involve cognition thinking so it&#39;s
+[00:05:02] things like
+[00:05:03] mental states like knowing believing
+[00:05:05] understanding
+[00:05:06] remembering okay that&#39;s the cognitive
+[00:05:09] category
+[00:05:10] the volitional volitional means having
+[00:05:13] to do with
+[00:05:14] willing so that includes things like
+[00:05:16] wanting or intending
+[00:05:18] these are all the examples that place
+[00:05:19] himself uses
+[00:05:21] in the reading for today now place
+[00:05:24] thinks that for
+[00:05:25] all of the mental states in these two
+[00:05:27] categories the behaviorist picture works
+[00:05:30] fine
+[00:05:30] so he thinks for example that you know
+[00:05:34] believing something we can explain for
+[00:05:37] example that you believe that it&#39;s going
+[00:05:39] to rain
+[00:05:41] partly in terms of the fact that you
+[00:05:43] pick up an umbrella like the physical
+[00:05:45] act of grabbing an umbrella is part of
+[00:05:48] the story that we tell
+[00:05:50] a crucial part of the story according to
+[00:05:51] the behaviorist
+[00:05:53] of what makes it the case that you
+[00:05:56] believe that it&#39;s going to rain
+[00:05:58] so place thinks that behaviorism works
+[00:06:01] for these two
+[00:06:02] but then he thinks that for well
+[00:06:06] let&#39;s talk about sensation like you know
+[00:06:08] sensory experience through your sensory
+[00:06:11] organs
+[00:06:11] when you smell something like you smell
+[00:06:15] i don&#39;t know lilac i don&#39;t know what
+[00:06:17] lilac
+[00:06:18] exactly smells like but okay it has a
+[00:06:21] certain way that it smells or forget
+[00:06:22] lilac
+[00:06:23] peanut butter that&#39;s better peanut
+[00:06:25] butter smells that
+[00:06:26] peanuty way right there&#39;s there&#39;s
+[00:06:30] something that it feels like
+[00:06:32] to smell the peanutty-ness of some
+[00:06:35] peanut butter
+[00:06:36] it has a certain conscious character
+[00:06:39] that&#39;s this
+[00:06:40] of this third type right it feels a
+[00:06:42] certain way
+[00:06:43] to smell or to see or to hear or to
+[00:06:46] taste or whatever that&#39;s sensation
+[00:06:48] the same goes for mental imagery if you
+[00:06:50] imagine something
+[00:06:51] like if you imagine a yellow duck in
+[00:06:54] your head
+[00:06:55] the yellowness of the duck looks a
+[00:06:58] certain way it looks that
+[00:06:59] yellowy way to you all of this stuff
+[00:07:02] this is a third type of mental state
+[00:07:04] or mental event and place thinks
+[00:07:07] that you&#39;re never going to be able to
+[00:07:09] explain these
+[00:07:10] mental things in terms of outwardly
+[00:07:13] observable behavior things that you know
+[00:07:16] moving of your arms and legs and
+[00:07:17] flapping of your lips and that sort of
+[00:07:19] stuff
+[00:07:19] right what things feel like another
+[00:07:22] prominent example that would go in this
+[00:07:24] category
+[00:07:25] this would vaguely fall under sensation
+[00:07:28] certainly under experience
+[00:07:29] or whatever is pain
+[00:07:32] pain feels a certain way there&#39;s
+[00:07:34] different types of pain
+[00:07:35] right take for example burning a burning
+[00:07:39] pain a burning sensation right that
+[00:07:42] feels a certain way and we&#39;re never
+[00:07:44] going to be able to explain that just in
+[00:07:45] terms of behavior
+[00:07:47] and so it&#39;s only for this third
+[00:07:50] category the conscious mental states or
+[00:07:53] the conscious mental events
+[00:07:54] that place is using the mind brain
+[00:07:58] identity theory so he&#39;s just using it to
+[00:08:00] explain this stuff
+[00:08:01] that&#39;s why the title is is consciousness
+[00:08:05] a brain process the question is not
+[00:08:07] whether the mind is a brain process but
+[00:08:10] just
+[00:08:10] some of the mind namely the conscious
+[00:08:12] part of the mind
+[00:08:14] here is another more succinct way of
+[00:08:17] putting the thesis of the mind brain
+[00:08:20] identity theory which we will sometimes
+[00:08:21] just call the identity theory for short
+[00:08:24] here&#39;s a uh you know a specific shorter
+[00:08:27] way of putting that thesis the thesis
+[00:08:29] that place is putting forward
+[00:08:31] in the reading for today
+[00:08:34] pain is brain process b
+[00:08:37] where brain process b is just a generic
+[00:08:40] label for some brain process whatever it
+[00:08:43] turns out to be we&#39;ll ask the
+[00:08:45] neuroscientists about it later right the
+[00:08:47] point is just that
+[00:08:49] pain that&#39;s an example of a conscious
+[00:08:50] mental state is identical with
+[00:08:53] the identity theory it&#39;s identical with
+[00:08:55] some process in the brain we&#39;re going to
+[00:08:56] call it brain process b
+[00:08:58] this is the thesis that place is
+[00:09:01] defending
+[00:09:02] now here is something that place says
+[00:09:05] about this thesis
+[00:09:06] the mind brain identity theory right he
+[00:09:09] says this in the article and it&#39;s super
+[00:09:11] important to understand so i&#39;m going to
+[00:09:12] say it slowly and then i&#39;m going to
+[00:09:14] write it out
+[00:09:15] the identity theory is a scientific
+[00:09:18] hypothesis that cannot be dismissed
+[00:09:21] on logical grounds
+[00:09:27] the identity theory is a scientific
+[00:09:29] hypothesis
+[00:09:30] that cannot be dismissed on logical
+[00:09:32] grounds
+[00:09:34] okay what does that mean i can&#39;t tell
+[00:09:36] you yet
+[00:09:37] in order to explain that to you i have
+[00:09:39] to talk for like
+[00:09:41] a few minutes like three or four minutes
+[00:09:43] about the word
+[00:09:44] is
+[00:09:49] you at least most of you if you&#39;re
+[00:09:52] watching this video not with subtitles
+[00:09:54] or anything like that
+[00:09:55] you are a speaker of the english
+[00:09:57] language and you use the word
+[00:09:59] is all the time maybe you didn&#39;t know
+[00:10:03] there are different kinds of iss&#39;s and
+[00:10:06] they do
+[00:10:06] very different things they just look and
+[00:10:08] sound the same
+[00:10:10] here is one way of starting to divide up
+[00:10:13] some of the different uses of the word
+[00:10:15] is in the english language
+[00:10:18] you&#39;ve got the is of identity and the is
+[00:10:21] of
+[00:10:21] predication write all of this down if
+[00:10:24] you&#39;re enrolled in this course
+[00:10:25] all of this will be on the exam the is
+[00:10:28] of identity
+[00:10:29] here are the important facts about this
+[00:10:31] use of the word is
+[00:10:33] on both sides of the word is are nouns
+[00:10:37] or noun phrases and it says
+[00:10:40] that when you use the word is like this
+[00:10:42] the is of identity you say these two
+[00:10:44] things are identical
+[00:10:45] they&#39;re the same right so superman
+[00:10:48] that&#39;s a that&#39;s a name
+[00:10:50] for a dude and clark kent that&#39;s also a
+[00:10:52] name
+[00:10:53] for a dude both of these are a certain
+[00:10:56] kind of noun phrase
+[00:10:57] right and there&#39;s two noun phrases and
+[00:10:59] you just slap them on either side of the
+[00:11:01] word
+[00:11:01] is and and the word is functions in the
+[00:11:04] middle to say that these
+[00:11:05] are the very same thing that is
+[00:11:08] different
+[00:11:09] from the is of predication where the
+[00:11:11] thing
+[00:11:12] that&#39;s on the right side here
+[00:11:15] six feet tall the thing on the right
+[00:11:17] side of the word
+[00:11:18] is in this sentence is not a noun phrase
+[00:11:22] this isn&#39;t a name
+[00:11:23] for an object or some way of referring
+[00:11:25] to an object this is a characteristic
+[00:11:28] of the object right this is an adjective
+[00:11:32] superman is six feet tall
+[00:11:35] this is not saying that there&#39;s two
+[00:11:37] things superman and six feet tall and
+[00:11:39] they&#39;re identical no no no
+[00:11:40] it&#39;s predicating of superman
+[00:11:44] describing superman as having some
+[00:11:47] characteristic
+[00:11:48] what you&#39;ve got over here is an
+[00:11:50] adjectival clause i guess it&#39;s called i
+[00:11:52] don&#39;t know what this is called but
+[00:11:53] something like that
+[00:11:54] this is not a noun phrase okay do you
+[00:11:57] see how these are
+[00:11:58] totally different in this case the word
+[00:12:01] is
+[00:12:02] is taking two different things and
+[00:12:04] saying that they&#39;re one thing
+[00:12:05] superman and clark kent are one thing
+[00:12:08] in this case the is the word is
+[00:12:12] is taking a thing superman and
+[00:12:15] describing him
+[00:12:16] here&#39;s another example the car is a blue
+[00:12:19] vehicle
+[00:12:21] a blue vehicle that&#39;s a noun phrase it
+[00:12:24] specifies a thing
+[00:12:25] a blue vehicle and then you&#39;ve got the
+[00:12:27] car
+[00:12:28] that&#39;s another noun phrase it specifies
+[00:12:30] a thing the car
+[00:12:31] and what the word is is doing is it&#39;s
+[00:12:34] saying that these two things are one
+[00:12:35] thing
+[00:12:37] but notice how different this sentence
+[00:12:39] is the car is blue
+[00:12:41] what you&#39;ve got over here is not some
+[00:12:44] expression that refers to an object
+[00:12:46] no no this is an adjective blue
+[00:12:49] the car is blue it takes something
+[00:12:53] the word is takes an object
+[00:12:56] that&#39;s being referred to here and it
+[00:12:58] just describes that object
+[00:13:00] so these two sentences are similar in
+[00:13:03] some sense in that they&#39;re
+[00:13:05] you know picking out the same ish uh
+[00:13:09] state of affairs in the world the state
+[00:13:11] of affairs of there being a car and
+[00:13:12] it and it having a blue color but this
+[00:13:15] sentence
+[00:13:15] is using the is of identity to say that
+[00:13:17] two things are one thing
+[00:13:19] and this sentence is using the is of
+[00:13:21] predication to say of one thing
+[00:13:23] that it has some characteristic okay so
+[00:13:27] you need to believe me and not just
+[00:13:29] because i&#39;m an authority figure or
+[00:13:31] something like that you need to
+[00:13:32] understand
+[00:13:33] why i&#39;m saying this you need to believe
+[00:13:34] me when i say that the is of identity
+[00:13:36] and the is of predication
+[00:13:37] are just two different words
+[00:13:40] now we need to make another distinction
+[00:13:44] among different uses of is
+[00:13:51] so there are two different kinds of
+[00:13:54] is-is of identity there&#39;s an is of
+[00:13:56] definition
+[00:13:57] and an is of composition now in both
+[00:14:00] cases
+[00:14:01] what sentences that use this kind of is
+[00:14:05] are doing is that they&#39;re saying that
+[00:14:08] two things are identical
+[00:14:09] so what we&#39;re going to find on both
+[00:14:11] sides of the word is
+[00:14:12] in both cases is we&#39;re going to find
+[00:14:14] noun phrases here&#39;s an example
+[00:14:16] a square that&#39;s a noun phrase it picks
+[00:14:19] out a thing a square
+[00:14:21] is an equilateral rectangle
+[00:14:24] an equilateral rectangle that also picks
+[00:14:27] out something so
+[00:14:28] this is the is of identity but notice
+[00:14:32] that this fact the fact that a square is
+[00:14:34] an equilateral tr
+[00:14:36] rectangle right like you guys know about
+[00:14:38] squares
+[00:14:39] a square is a rectangle where all of the
+[00:14:44] laterals all of the sides are
+[00:14:47] equal in length that&#39;s a square okay
+[00:14:50] so a square is an equilateral rectangle
+[00:14:54] that fact that these two things a square
+[00:14:57] and an equilateral rectangle are just
+[00:14:58] one thing they&#39;re identical
+[00:15:00] that fact a fact stated with the is
+[00:15:03] identity
+[00:15:03] is true by definition that&#39;s just the
+[00:15:06] definition
+[00:15:07] of a square all we had to do
+[00:15:10] to figure out that a square was an
+[00:15:13] equilateral rectangle
+[00:15:14] is look up the word square in a
+[00:15:16] dictionary
+[00:15:17] we just needed the definition we didn&#39;t
+[00:15:19] know need to go discover any squares in
+[00:15:22] the wild
+[00:15:23] we can&#39;t do that because squares don&#39;t
+[00:15:24] exist in the wild there are no squares
+[00:15:27] you ever seen a square no you haven&#39;t
+[00:15:29] squares are
+[00:15:30] two dimensional abstractions we made
+[00:15:33] them up
+[00:15:33] anyway it&#39;s nonetheless true that a
+[00:15:36] square is an equilateral rectangle
+[00:15:38] this is an is the sentence this sentence
+[00:15:42] uses the word is it&#39;s a version of the
+[00:15:44] is of identity but it&#39;s true by
+[00:15:46] definition
+[00:15:47] compare that to this sentence which uses
+[00:15:51] what place calls the is of composition
+[00:15:55] his table is an old packing case
+[00:15:59] that&#39;s place&#39;s example from the 1940s or
+[00:16:02] whatever
+[00:16:02] right an old packing case i guess is
+[00:16:05] just like a box
+[00:16:06] it&#39;s a box okay so someone obviously
+[00:16:10] has a a box and they&#39;re using the box as
+[00:16:13] a table
+[00:16:14] right so you go into their house and
+[00:16:16] you&#39;re offered some food
+[00:16:17] to eat on their table but the table is
+[00:16:20] just a box
+[00:16:22] because this person can&#39;t afford a a
+[00:16:25] regular table or they haven&#39;t gotten one
+[00:16:27] yet because they just moved and they&#39;re
+[00:16:28] using an old packing case they&#39;re using
+[00:16:30] a box or something
+[00:16:31] whatever the point is this sentence his
+[00:16:34] table is an old packing case
+[00:16:36] that uses the is of identity it says of
+[00:16:38] two things his table
+[00:16:39] and an old packing case that they&#39;re one
+[00:16:42] thing that they&#39;re identical
+[00:16:43] right noun phrases on both sides of the
+[00:16:45] word is
+[00:16:46] so this is the is of identity but it&#39;s
+[00:16:49] not
+[00:16:50] true by definition it&#39;s not like the
+[00:16:52] definitions of the words
+[00:16:54] table and packing case or whatever
+[00:16:58] make it guaranteed that
+[00:17:01] his table is an old packing case no
+[00:17:04] a square is an equilateral rectangle
+[00:17:07] that&#39;s true that&#39;s guaranteed to be true
+[00:17:09] by the definition of square
+[00:17:11] but the definition of table or none of
+[00:17:13] the definitions in this word
+[00:17:14] guarantee this to be true it just
+[00:17:17] happens
+[00:17:18] that this particular table is composed
+[00:17:22] or made up of an old
+[00:17:25] box or whatever true statements
+[00:17:28] that use the is of definition their true
+[00:17:31] what we say in philosophy they&#39;re true
+[00:17:33] necessarily necessary just means it must
+[00:17:38] be
+[00:17:39] it&#39;s necessarily the case it must be the
+[00:17:41] case
+[00:17:42] that a square is an equilateral
+[00:17:44] rectangle that&#39;s because it&#39;s part of
+[00:17:46] the definition
+[00:17:47] of square but facts that are stated
+[00:17:51] with the is of composition they&#39;re not
+[00:17:53] necessary they are as we say
+[00:17:55] contingent contingent
+[00:17:59] facts are facts that just happened to be
+[00:18:01] the case
+[00:18:02] it didn&#39;t need to be the case but it
+[00:18:03] just is it just is that this
+[00:18:06] guy&#39;s table is a packing case or
+[00:18:09] whatever
+[00:18:09] his table could have been made of all
+[00:18:11] sorts of different stuff maybe it could
+[00:18:12] have been made of like
+[00:18:14] metal melded in some shape or whatever
+[00:18:16] you could make a table out of that
+[00:18:18] he didn&#39;t want that table or he couldn&#39;t
+[00:18:20] afford it or whatever
+[00:18:21] it just so happens that his table is an
+[00:18:24] old packing case
+[00:18:25] it&#39;s a contingent fact it&#39;s not a
+[00:18:27] necessary fact
+[00:18:29] here is the last important piece of
+[00:18:30] information that you need
+[00:18:32] about all of these different is all of
+[00:18:35] these different uses of the word
+[00:18:37] is in the english language this is all
+[00:18:38] going to be relevant by the way
+[00:18:40] claims of this sort that use the is of
+[00:18:42] definition
+[00:18:44] they can be dismissed on logical grounds
+[00:18:48] all you have to do to prove one of these
+[00:18:50] claims false if it is false
+[00:18:53] all you&#39;d have to do is know the
+[00:18:55] definitions
+[00:18:56] of the words and use logic use just your
+[00:18:59] mind
+[00:19:00] thinking clearly right you&#39;d find some
+[00:19:03] contradiction
+[00:19:04] in there some logical contradiction if
+[00:19:06] you knew the definitions of all the
+[00:19:07] words
+[00:19:08] you can disprove a claim of this kind a
+[00:19:11] claim
+[00:19:12] consisting of the use of the is of
+[00:19:14] definition you can disprove one of these
+[00:19:16] if it can be disproved at all by just
+[00:19:20] thinking really clearly that&#39;s different
+[00:19:23] from the is of composition a claim of
+[00:19:26] this kind if it&#39;s false
+[00:19:28] in order to disprove this you need to go
+[00:19:31] and
+[00:19:31] look at this dude&#39;s table in the real
+[00:19:34] world you can&#39;t just
+[00:19:35] logic your way through whether or not
+[00:19:37] the table is an old packing case
+[00:19:39] just by knowing the definitions of the
+[00:19:40] word and thinking clearly no no
+[00:19:42] you gotta show up at his apartment or
+[00:19:44] whatever right
+[00:19:46] and see oh it&#39;s uh
+[00:19:49] the table is not an old packing case
+[00:19:51] it&#39;s really a
+[00:19:53] a rock or a bunch of glass and metal
+[00:19:56] or a wooden table that was purchased at
+[00:19:59] ikea or whatever
+[00:20:01] okay so these claims right here claims
+[00:20:04] using the is of composition they just
+[00:20:07] happen to be true when they are true and
+[00:20:08] if you want to disprove them
+[00:20:10] you have to use some science these are
+[00:20:13] scientific hypotheses you have to go and
+[00:20:15] investigate in the world the way
+[00:20:16] scientists do
+[00:20:18] if you want to disprove them claims that
+[00:20:21] use the is of definition
+[00:20:23] they are not scientific claims they are
+[00:20:27] claims well about the meanings of
+[00:20:30] words and you can disprove claims about
+[00:20:33] the meanings of words just by knowing
+[00:20:35] the meanings and using
+[00:20:36] basic logic so you need to understand
+[00:20:39] all of this there&#39;ll be lots of
+[00:20:40] questions
+[00:20:41] about this sort of stuff on the exam
+[00:20:43] you&#39;ll i don&#39;t know maybe you&#39;ll have to
+[00:20:44] like
+[00:20:45] categorize different sentences as as
+[00:20:47] using one of these is-is or something
+[00:20:49] like that that&#39;s something i might do
+[00:20:51] on the exam anyway what&#39;s the point
+[00:20:54] of all this stuff about the word is
+[00:20:57] here&#39;s the point
+[00:20:58] the mind-brain identity theory
+[00:21:01] is a claim that uses the word is
+[00:21:05] pain is brain process v well
+[00:21:09] which is is this the first thing is
+[00:21:13] it&#39;s definitely not the is of
+[00:21:16] predication
+[00:21:17] right the is of predication has an
+[00:21:19] adjective
+[00:21:20] on one side on the right side
+[00:21:23] but brain process b is not
+[00:21:26] an adjectival clause or whatever it&#39;s a
+[00:21:29] noun phrase
+[00:21:30] it picks out a certain brain process we
+[00:21:32] don&#39;t know which one
+[00:21:33] we&#39;re just using this placeholder the
+[00:21:34] letter b or whatever but
+[00:21:36] this is a noun phrase and this is a noun
+[00:21:39] phrase
+[00:21:39] pain is brain process b so whatever kind
+[00:21:43] of
+[00:21:43] is this is it&#39;s one of the is&#39;s
+[00:21:46] of identity well which one is it
+[00:21:49] well that&#39;s why place brings all of this
+[00:21:52] up place thinks
+[00:21:53] that a lot of people are trying to
+[00:21:55] disprove this thesis
+[00:21:57] on logical grounds just by thinking
+[00:22:00] about the definitions of the word
+[00:22:02] and what&#39;s conceivable or whatever if
+[00:22:05] they&#39;re trying to disprove
+[00:22:07] this claim in that way then they must be
+[00:22:10] thinking
+[00:22:10] that it is an instance of the is of
+[00:22:13] definition
+[00:22:14] this is right here they must be thinking
+[00:22:16] these folks who are objecting
+[00:22:18] to the mind brain identity theory if
+[00:22:20] they&#39;re objecting just by coming up with
+[00:22:22] some
+[00:22:23] with some you know fictional examples or
+[00:22:26] conceptual examples if they&#39;re just
+[00:22:27] think they&#39;re using
+[00:22:28] logic to disprove this claim then they
+[00:22:30] must think it&#39;s a claim
+[00:22:32] using the is of definition they must
+[00:22:34] think that
+[00:22:35] pain is meant to be by definition of the
+[00:22:37] word
+[00:22:38] brain process b but place is saying
+[00:22:41] no all of those attacks on the mind
+[00:22:44] brain identity theory won&#39;t work
+[00:22:46] because the mind brain identity theory
+[00:22:48] is not a claim
+[00:22:49] that uses the is of definition
+[00:22:52] no rather it&#39;s a claim that uses
+[00:22:55] the is of composition this is just a
+[00:22:58] contingent claim it&#39;s a scientific
+[00:23:00] hypothesis
+[00:23:02] okay so now we&#39;re ready to understand
+[00:23:04] this sentence that i wrote up however
+[00:23:06] many minutes ago
+[00:23:07] the identity theory the mind brain
+[00:23:09] identity theory that place is defending
+[00:23:11] in this article
+[00:23:12] is a scientific hypothesis it&#39;s one of
+[00:23:16] these
+[00:23:17] it&#39;s a scientific hypothesis and it
+[00:23:20] cannot be
+[00:23:21] dismissed on logical grounds you can&#39;t
+[00:23:24] just
+[00:23:25] prove that it&#39;s a false claim the
+[00:23:28] identity theory
+[00:23:29] by just thinking logically because it&#39;s
+[00:23:32] not
+[00:23:32] a case where some some identity
+[00:23:35] statement is made using the is of
+[00:23:36] definition
+[00:23:38] so what this means is that the thesis
+[00:23:41] that place is putting forward in this
+[00:23:43] article the mind brain identity theory
+[00:23:45] is a thesis stated with the is of
+[00:23:47] composition not the is of definition
+[00:23:50] okay you got that i&#39;m going to say it
+[00:23:51] one more time the thesis put forward
+[00:23:54] in this article by ut place the mind
+[00:23:57] brain identity theory that&#39;s the thesis
+[00:23:58] it&#39;s right here
+[00:23:59] pain is brain process b that&#39;s one
+[00:24:02] instance of the
+[00:24:03] thesis having to do with one conscious
+[00:24:05] mental state but we could do it in terms
+[00:24:07] of others
+[00:24:08] we could do it in terms of like you know
+[00:24:10] i don&#39;t know um a tickling sensation
+[00:24:12] instead of pain or whatever but the
+[00:24:13] point is
+[00:24:14] this statement pain is brain process b
+[00:24:17] it&#39;s a statement made with the is of
+[00:24:18] composition not
+[00:24:20] the is of definition and because it&#39;s a
+[00:24:23] statement
+[00:24:24] about a contingent statement about what
+[00:24:26] just happens to be
+[00:24:28] the case the only way you can disprove
+[00:24:30] it is by doing
+[00:24:31] science or at least that&#39;s what place
+[00:24:34] thinks
+[00:24:34] okay so let&#39;s go through a passage from
+[00:24:37] the reading
+[00:24:38] where place admits happily
+[00:24:41] that if you interpret this statement
+[00:24:43] pain is brain process b
+[00:24:45] if you interpret that statement as a an
+[00:24:47] instance of the is of definition then of
+[00:24:49] course
+[00:24:50] this claim is going to be easily
+[00:24:52] disprovable
+[00:24:53] here&#39;s what he says this is on page 56
+[00:24:56] in the article that we read for today
+[00:24:58] to say that statements about
+[00:25:00] consciousness
+[00:25:01] our statements about brain processes is
+[00:25:04] manifestly false
+[00:25:05] okay let&#39;s just pause actually for a
+[00:25:07] second what he&#39;s saying there is that
+[00:25:09] if you think that this is true like a
+[00:25:12] statement about
+[00:25:13] a conscious mental process like pain is
+[00:25:16] well it just
+[00:25:17] means the same thing it&#39;s the same
+[00:25:19] statement
+[00:25:20] it has the same meaning as a statement
+[00:25:22] about brain process b
+[00:25:24] then of course that claim is false the
+[00:25:26] mind brain identity theory is false
+[00:25:28] if you understand it as a claim about
+[00:25:30] the meanings of words
+[00:25:32] right that&#39;s what he&#39;s saying there he
+[00:25:34] keeps going
+[00:25:35] this is shown oh and now he&#39;s going to
+[00:25:37] list three ways in which you can easily
+[00:25:40] demonstrate
+[00:25:41] that pain is brain process b understood
+[00:25:44] as a use of the is of definition is just
+[00:25:46] going to be wrong here are the three
+[00:25:47] ways
+[00:25:48] this is shown a by the fact that you can
+[00:25:51] describe your sensations and mental
+[00:25:53] imagery
+[00:25:54] without knowing anything about your
+[00:25:55] brain process or even that such things
+[00:25:58] exist right so you can describe yourself
+[00:26:01] as feeling pain
+[00:26:03] oh i have a terrible pain in my leg you
+[00:26:06] can say that meaningfully and understand
+[00:26:08] exactly what you&#39;re saying without
+[00:26:10] knowing about any brain processes i mean
+[00:26:12] people have been saying things like that
+[00:26:14] before they knew that the brain existed
+[00:26:17] inside of the skull or before that they
+[00:26:19] knew that the brain
+[00:26:21] that was in there was the seat of the
+[00:26:23] mind or something like that i mean
+[00:26:25] you know people used to think all sorts
+[00:26:27] of different stuff about the body
+[00:26:29] but they still could meaningfully talk
+[00:26:32] about
+[00:26:33] mental states or mental sensations so
+[00:26:36] it can&#39;t be that pain is by definition
+[00:26:38] brain process b
+[00:26:39] because you can know the definition of
+[00:26:41] this you can understand what pain is and
+[00:26:43] not know anything about the brain
+[00:26:44] okay and then he keeps going place gives
+[00:26:46] a second
+[00:26:48] reason why this claim understood as a
+[00:26:51] claim of the is of definition
+[00:26:52] is just obviously false he says be
+[00:26:56] by the fact that statements about one&#39;s
+[00:26:58] consciousness
+[00:26:59] and statements about one&#39;s brain
+[00:27:01] processes are verified
+[00:27:03] in entirely different ways right that so
+[00:27:05] you check
+[00:27:06] whether someone is in pain by maybe
+[00:27:08] asking them whether they&#39;re in pain
+[00:27:10] or you check whether you are yourself in
+[00:27:12] pain by just
+[00:27:14] attending to whether you&#39;re how you&#39;re
+[00:27:16] feeling
+[00:27:17] but you check whether you have a certain
+[00:27:19] brain process or whether someone else
+[00:27:20] has a certain brain process by like
+[00:27:22] going into a brain scanner
+[00:27:23] so you check them in totally different
+[00:27:25] ways okay and then he says
+[00:27:27] and c by the fact that there is nothing
+[00:27:30] self-contradictory
+[00:27:31] about the statement x has a pain but
+[00:27:33] there is nothing going on in his brain
+[00:27:36] that claim x has a pain but there&#39;s
+[00:27:38] nothing going on in his brain
+[00:27:40] or her brain right that claim
+[00:27:44] may be false it may be impossible
+[00:27:47] but it&#39;s not false or demonstrably
+[00:27:50] impossible
+[00:27:51] because of the meanings of the words so
+[00:27:54] therefore
+[00:27:55] this claim if understood as using the is
+[00:27:57] of definition
+[00:27:58] is just totally false that&#39;s what place
+[00:28:00] has said right there
+[00:28:02] but place claims that you&#39;re just not
+[00:28:05] going to be able to disprove
+[00:28:07] the mind brain identity theory with any
+[00:28:09] of that because the mind brain identity
+[00:28:11] theory
+[00:28:12] is a scientific hypothesis that uses the
+[00:28:15] is of composition
+[00:28:16] here&#39;s what he says this is also on page
+[00:28:18] 56 in the reading
+[00:28:20] those who contend that the statement
+[00:28:23] consciousness is a brain process
+[00:28:25] is logically untenable base their claim
+[00:28:27] i suspect
+[00:28:28] on the mistaken assumption that if the
+[00:28:30] meanings of two statements or
+[00:28:31] expressions
+[00:28:32] are quite unconnected they cannot both
+[00:28:34] provide an
+[00:28:35] adequate characterization of the same
+[00:28:37] object or state of affairs
+[00:28:39] if something is a state of consciousness
+[00:28:41] it cannot be a brain process
+[00:28:43] since there is nothing
+[00:28:44] self-contradictory in supposing that
+[00:28:46] someone feels a pain
+[00:28:47] when there is nothing happening inside
+[00:28:49] his skull that last bit of that last
+[00:28:51] sentence that was
+[00:28:52] he was speaking in the voice of the of
+[00:28:54] the foolish
+[00:28:55] person who is attacking the mind brain
+[00:28:58] identity theory
+[00:28:59] okay then he says by the same token we
+[00:29:01] might be led to conclude
+[00:29:02] that a table cannot be an old packing
+[00:29:05] case since there is nothing
+[00:29:06] self-contradictory in supposing that
+[00:29:08] someone has a table
+[00:29:09] but is not in possession of an old
+[00:29:12] packing case
+[00:29:13] the point there is just you can&#39;t
+[00:29:15] disprove
+[00:29:16] a scientific hypothesis that uses the is
+[00:29:20] of composition
+[00:29:21] with just some some thought experiment
+[00:29:24] where you say well it&#39;s
+[00:29:25] it&#39;s coherent to imagine one without the
+[00:29:28] other
+[00:29:28] right it&#39;s coherent to imagine a table
+[00:29:30] without an old packing case
+[00:29:31] therefore his table can&#39;t be an old
+[00:29:33] packing case no that&#39;s crazy
+[00:29:35] because the claim that his table is an
+[00:29:37] old packing case is a contingent claim
+[00:29:39] just about what his table happens to be
+[00:29:41] made of
+[00:29:42] and so you can&#39;t disprove it with some
+[00:29:43] thought experiment
+[00:29:45] so place is putting forward and
+[00:29:48] defending from
+[00:29:49] some common objections the mind brain
+[00:29:52] identity theory
+[00:29:53] which you know as a sort of specific
+[00:29:55] instance we can think of it as the claim
+[00:29:56] that
+[00:29:57] pain or any other conscious mental state
+[00:29:59] is brain process b
+[00:30:00] or whatever other brain process and he&#39;s
+[00:30:03] defending this thesis
+[00:30:04] by saying that this claim is just a
+[00:30:07] scientific claim
+[00:30:09] so here&#39;s a sort of good clear evocative
+[00:30:13] passage where he further explains
+[00:30:16] scientific claims that use the is of
+[00:30:18] composition
+[00:30:19] this comes on page 57 in the reading
+[00:30:22] a good example here is the case of the
+[00:30:25] cloud
+[00:30:26] and the mass of droplets or other
+[00:30:28] particles in suspension
+[00:30:30] a cloud is a large semi-transparent mass
+[00:30:33] with a fleecy texture suspended in the
+[00:30:36] atmosphere
+[00:30:36] whose shape is subject to continual and
+[00:30:39] kaleidoscopic
+[00:30:40] change okay let&#39;s just pause there yeah
+[00:30:42] okay whatever so like a cloud
+[00:30:44] is just some like particles in the air
+[00:30:47] that&#39;s what a cloud is
+[00:30:48] but that&#39;s a scientific claim it just
+[00:30:50] turned out that clouds were
+[00:30:52] uh you know a bunch of droplets in the
+[00:30:55] air someone had to discover that
+[00:30:57] it&#39;s not the definition of the word
+[00:30:59] cloud because we had the word cloud
+[00:31:02] and it had a definition and it described
+[00:31:05] some things that we saw in the sky
+[00:31:07] long before anyone ever figured out what
+[00:31:09] clouds were
+[00:31:10] someone might have thought for some
+[00:31:12] amount of time and they could have been
+[00:31:14] coherent and thinking this
+[00:31:15] that the cloud was was like cotton candy
+[00:31:18] or whatever
+[00:31:19] you have to have some scientists who go
+[00:31:21] up in a balloon to investigate clouds
+[00:31:23] in order to figure out what clouds are
+[00:31:25] or you have to explain to a child who
+[00:31:28] already knows the definition of the word
+[00:31:30] cloud
+[00:31:31] the meaning of the word you have to
+[00:31:33] explain to a child
+[00:31:34] oh it turns out clouds are just
+[00:31:36] particles suspended in the atmosphere
+[00:31:39] mostly water droplets okay so he
+[00:31:42] continues
+[00:31:43] when observed at close quarters however
+[00:31:45] it is found to consist of a mass of tiny
+[00:31:47] particles
+[00:31:48] usually water droplets in continuous
+[00:31:51] motion
+[00:31:52] on the basis of this second observation
+[00:31:54] we conclude that a cloud is a mass of
+[00:31:56] tiny particles and nothing else
+[00:31:58] but there is no logical connection in
+[00:32:00] our language between
+[00:32:01] a cloud or the word cloud and a mass of
+[00:32:04] tiny particles or the phrase
+[00:32:06] mass of tiny particles there is nothing
+[00:32:08] self-contradictory
+[00:32:09] in talking about a cloud which is not
+[00:32:11] composed of tiny particles in suspension
+[00:32:14] there is no contradiction involved in
+[00:32:16] supposing that clouds
+[00:32:17] consist of a dense mass of fibrous
+[00:32:20] tissue indeed
+[00:32:21] such a consistency seems to be implied
+[00:32:23] by many of the functions
+[00:32:25] performed by clouds in fairy stories and
+[00:32:27] mythology
+[00:32:41] in suspension and the cloud okay that&#39;s
+[00:32:44] the punch line
+[00:32:45] right all of these thought experiments
+[00:32:48] that philosophers give
+[00:32:49] thought experiments about someone who&#39;s
+[00:32:51] feeling pain but doesn&#39;t have a brain at
+[00:32:53] all or whatever
+[00:32:54] right or nothing&#39;s going on in their
+[00:32:56] brain those kind of thought experiments
+[00:32:58] they show that the word pain and the
+[00:33:01] phrase
+[00:33:02] brain process whatever right those words
+[00:33:05] or phrases
+[00:33:06] mean different things but from the fact
+[00:33:08] that the words or phrases have different
+[00:33:11] meanings
+[00:33:11] it does not follow place is pointing out
+[00:33:14] that there isn&#39;t just one thing and that
+[00:33:17] these two
+[00:33:18] descriptions are descriptions of one and
+[00:33:20] the same thing
+[00:33:22] just like the fact that cloud and
+[00:33:24] massive tiny particles
+[00:33:26] are two phrases in the english language
+[00:33:28] that have different meanings
+[00:33:29] but it still turns out that a cloud just
+[00:33:32] is a mass of tiny
+[00:33:33] particles okay so that is the mind brain
+[00:33:37] identity theory
+[00:33:38] and next time we&#39;re going to get an
+[00:33:40] attack on that
+[00:33:41] thesis that claim about the mind
