@@ -1,7 +1,7 @@
 // test.js
 const youtubeSummarizer = require('./bot.js');
 
-const testVideoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Replace with a valid YouTube video URL
+const testVideoUrl = 'https://www.youtube.com/watch?v=Y87hcMCYrBI'; // Replace with a valid YouTube video URL
 
 // Create a mock response object
 const mockRes = {

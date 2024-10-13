@@ -2,7 +2,6 @@ require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const NodeCache = require('node-cache');
-const { getSubtitles } = require('youtube-captions-scraper');
 const ytdl = require('ytdl-core');
 
 // Initialize cache
@@ -61,6 +60,18 @@ const fetchVideoInfo = async (videoId) => {
   }
 };
 
+const parseCaptions = (xml) => {
+  const parser = new (require('xmldom').DOMParser)();
+  const doc = parser.parseFromString(xml, 'text/xml');
+  const textNodes = doc.getElementsByTagName('text');
+
+  return Array.from(textNodes).map(node => ({
+    start: parseFloat(node.getAttribute('start')),
+    dur: node.getAttribute('dur') ? parseFloat(node.getAttribute('dur')) : 0,
+    text: node.textContent
+  }));
+};
+
 const formatSubtitles = (captions) => {
   const formatTime = (seconds) => {
     const hours = Math.floor(seconds / 3600);
@@ -74,23 +85,18 @@ const formatSubtitles = (captions) => {
     return `${timeFormatted} ${caption.text}`;
   }).join('\n');
 };
-
-const splitCaptionsIntoChunks = (captions, chunkDurationMinutes = 30) => {
+const splitCaptionsIntoChunks = (captions, chunkDurationMinutes = 60) => {
   const chunks = [];
   let currentChunk = [];
-  let currentDuration = 0;
+  const chunkDurationSeconds = chunkDurationMinutes * 60;
 
   for (const caption of captions) {
-    currentChunk.push(caption);
-    // Convert caption.dur to a number before adding
-    currentDuration += parseFloat(caption.dur);
-
-    if (currentDuration >= chunkDurationMinutes * 60) {
-      console.log('currentDuration', currentDuration)
-
+    if (currentChunk.length === 0 ||
+        caption.start - currentChunk[0].start < chunkDurationSeconds) {
+      currentChunk.push(caption);
+    } else {
       chunks.push(currentChunk);
-      currentChunk = [];
-      currentDuration = 0;
+      currentChunk = [caption];
     }
   }
 
@@ -101,7 +107,7 @@ const splitCaptionsIntoChunks = (captions, chunkDurationMinutes = 30) => {
   return chunks;
 };
 
-const generateTakeaways = async (title, captions) => {
+const generateTakeaways = async (title, captions, fileHandle) => {
   const chunks = splitCaptionsIntoChunks(captions);
   let allTakeaways = '';
 
@@ -109,9 +115,13 @@ const generateTakeaways = async (title, captions) => {
 
   for (let i = 0; i < chunks.length; i++) {
     const chunkSubtitles = formatSubtitles(chunks[i]);
-    const prompt = `
-      I want you to only answer in Russian. 
-      Your goal is to extract key takeaways from the following video transcript. 
+
+    // Append each item to the file, followed by a newline
+    await fileHandle.appendFile(`${chunkSubtitles}\n`);
+
+    const prompt1 = `
+      I want you to only answer in Russian.
+      Your goal is to extract key takeaways from the following video transcript.
       Takeaways must be concise, informative and easy to read & understand.
       Each key takeaway should be a list item, of the following format:
       - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
@@ -120,18 +130,77 @@ const generateTakeaways = async (title, captions) => {
       - 00:00:05 🤖 ...
       - 00:02:18 🛡️ ...
       - 00:05:37 💼 ...
-      Keep emoji relevant and unique to each key takeaway item. 
-      Do not use the same emoji for every takeaway. 
+      Keep emoji relevant and unique to each key takeaway item.
+      Do not use the same emoji for every takeaway.
       Do not render brackets. Do not prepend takeaway with "Key takeaway".
       [VIDEO TITLE]:
       ${title}
       [VIDEO TRANSCRIPT]:
       ${chunkSubtitles}
+
+      Please respond in Russian, using a formal and informative tone. 
+      Make sure the title is between 10 and 50 characters long. Do not include a title before the bullet point list.
+      Ensure there is at least a 15-second gap between timestamps in your summary.
+      Don't call the speaker.
+      Make sure the title is between 10 and 50 characters long. Do not include a title before the bullet point list.
+      Prioritize summarizing the key points and insights discussed every 3 to 5 minutes of the video. Every 3 to 5 minutes of the TRANSCRIPT.
+      Ensure there is at least a 15-second gap between timestamps in your summary.
+    `;
+
+    let prompt2 = '';
+    // if (allTakeaways !== '') {
+    //   prompt2 = `
+    //     Continue in the stile of previous takeaways
+    //     [THE PREVIOUS TAKEAWAYS]:
+    //     ${allTakeaways}
+    //
+    //     [KEY TAKEAWAYS LIST IN Russian]:
+    //   `;
+    // }
+    const prompt3 = `
       [KEY TAKEAWAYS LIST IN Russian]:
     `;
 
+//     const prompt = `
+// Please analyze the following video captions and provide just the key points.
+// Maximum takeaway length is 50 symbols.
+// Don't call the speaker.
+// Do not prepend your answer with a title.
+// Structure your output as a bullet point list with timestamps for each key point.
+// For each bullet point, select a single emoji that best represents the *main idea* of the discussed topic.
+// Make sure that each emoji is used only once throughout the summary.
+//
+// Each key takeaway should be a list item, of the following format:
+// - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
+// Timestamp in format HH:MM:SS
+//
+// Here are some examples of how to format your output:
+//
+// Example 1:
+//
+// - 00:00:05 🤖 Влияниение на общество
+// - 00:02:18 🛡️ Потенциальные преимущества и риски
+//
+// Example 2:
+//
+// - 00:05:37 💼 Новая стратегию для развития
+// - 00:07:56 📈 Текущий рынок продуктов
+//
+// Do not render brackets.
+// [VIDEO TITLE]:
+// ${title}
+//
+// [VIDEO TRANSCRIPT]:
+// ${chunkSubtitles}
+//
+// Please respond in Russian, using a formal and informative tone.
+// Make sure the title is between 10 and 50 characters long. Do not include a title before the bullet point list.
+// Make sure the title is between 10 and 50 characters long. Do not include a title before the bullet point list.
+// [KEY TAKEAWAYS LIST IN Russian]:
+//
+//     `;
     try {
-      const result = await model.generateContent(prompt);
+      const result = await model.generateContent(prompt1 + prompt2 + prompt3);
       const response = await result.response;
       allTakeaways += response.text() + '\n\n';
     } catch (error) {

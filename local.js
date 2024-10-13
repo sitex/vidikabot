@@ -1,12 +1,12 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const { extractVideoId, fetchVideoInfo, formatSubtitles, generateTakeaways } = require('./bot');
+const fs = require('fs').promises;
 
 const token = process.env.TELEGRAM_BOT_TOKEN;
 
 // Create a bot instance
 const bot = new TelegramBot(token);
-
 
 async function sendLongMessage(chatId, text) {
     const maxLength = 4000; // Leave some room for formatting
@@ -37,8 +37,6 @@ async function sendLongMessage(chatId, text) {
     }
 }
 
-
-
 // Helper function to send messages with error handling and message splitting
 const sendMessage = async (chatId, text) => {
   const maxLength = 4000; // Maximum safe length for a Telegram message
@@ -56,6 +54,17 @@ const sendMessage = async (chatId, text) => {
     }
   }
 };
+
+async function readCaptionsFromFile(videoId) {
+  try {
+    const data = await fs.readFile('captions.json', 'utf8');
+    const captions = JSON.parse(data);
+    return captions[videoId] || null;
+  } catch (error) {
+    console.error('Error reading captions file:', error);
+    return null;
+  }
+}
 
 async function startBot() {
   try {
@@ -96,7 +105,14 @@ async function startBot() {
           // console.log(captions);
           // const formattedSubtitles = formatSubtitles(captions);
 
-          const takeaways = await generateTakeaways(title, captions);
+
+            // Open the file for appending
+          const filename = 'captions/' + videoId + '.txt';
+          const fileHandle = await fs.open(filename, 'a');
+
+          const takeaways = await generateTakeaways(title, captions, fileHandle);
+
+          await fileHandle.close();
 
           await sendMessage(chatId, `Краткое содержание видео "${title}":\n\n${takeaways}`);
         } else {
@@ -115,6 +131,9 @@ async function startBot() {
           errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
         }
         await sendMessage(chatId, errorMessage);
+
+
+
       }
     });
   } catch (error) {
