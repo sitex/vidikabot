@@ -16,9 +16,23 @@ const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN);
 
 // YouTube video processing functions
 const extractVideoId = (url) => {
-  const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
-  const match = url.match(regex);
-  return match ? match[1] : null;
+  const patterns = [
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^&]+)/,
+    /(?:https?:\/\/)?(?:m\.)?youtube\.com\/watch\?v=([^&]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/embed\/([^/?]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/v\/([^/?]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^/?]+)/,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^/?]+)/
+  ];
+
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match) {
+      return match[1];
+    }
+  }
+
+  return null;
 };
 
 const fetchVideoInfo = async (videoId) => {
