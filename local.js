@@ -79,61 +79,60 @@ async function startBot() {
     bot.on('message', async (msg) => {
       const chatId = msg.chat.id;
       const messageText = msg.text;
-
+    
       var d = new Date();
       var n = d.toLocaleTimeString();
-
+    
       console.log(n, messageText);
-
+    
+      let fileHandle = null;  // Declare file handle outside try block
       try {
         if (messageText.startsWith('/start')) {
           await sendMessage(chatId, 'Добро пожаловать! Отправьте мне ссылку на видео YouTube, чтобы получить его краткое содержание.');
         } else if (messageText.includes('youtube.com') || messageText.includes('youtu.be')) {
           await sendMessage(chatId, 'Обрабатываю ваш запрос. Это может занять некоторое время...');
-
+    
           const videoId = extractVideoId(messageText);
           if (!videoId) {
             throw new Error('Неверная ссылка на YouTube видео');
           }
-
-          const { title, captions } = await fetchVideoInfo(videoId);
-
-          if (!captions || captions.length === 0) {
-            throw new Error('Для этого видео не найдены субтитры');
+    
+          try {
+            const { title, captions } = await fetchVideoInfo(videoId);
+            
+            if (!captions || captions.length === 0) {
+              throw new Error('Для этого видео не найдены субтитры');
+            }
+    
+            // Create captions directory if it doesn't exist
+            const fs = require('fs').promises;
+            await fs.mkdir('captions', { recursive: true });
+            
+            // Open file handle
+            const filename = `captions/${videoId}.txt`;
+            fileHandle = await fs.open(filename, 'w');  // 'w' to overwrite existing file
+    
+            const takeaways = await generateTakeaways(title, captions, fileHandle);
+            await sendMessage(chatId, `Краткое содержание видео "${title}":\n\n${takeaways}`);
+          } catch (error) {
+            throw new Error(`Ошибка при обработке видео: ${error.message}`);
           }
-
-          // console.log(captions);
-          // const formattedSubtitles = formatSubtitles(captions);
-
-
-            // Open the file for appending
-          const filename = 'captions/' + videoId + '.txt';
-          const fileHandle = await fs.open(filename, 'a');
-
-          const takeaways = await generateTakeaways(title, captions, fileHandle);
-
-          await fileHandle.close();
-
-          await sendMessage(chatId, `Краткое содержание видео "${title}":\n\n${takeaways}`);
         } else {
           await sendMessage(chatId, 'Пожалуйста, отправьте корректную ссылку на видео YouTube.');
         }
       } catch (error) {
         console.error('Ошибка обработки сообщения:', error);
-        let errorMessage = 'Произошла ошибка при обработке вашего запроса. ';
-        if (error.message.includes('Неверная ссылка')) {
-          errorMessage += 'Пожалуйста, проверьте ссылку и попробуйте еще раз.';
-        } else if (error.message.includes('Субтитры не найдены')) {
-          errorMessage += 'Для этого видео субтитры недоступны. Пожалуйста, попробуйте другое видео с доступными субтитрами.';
-        } else if (error.message.includes('Не удалось сгенерировать краткое содержание')) {
-          errorMessage += 'Не удалось создать краткое содержание. Пожалуйста, попробуйте еще раз или используйте другое видео.';
-        } else {
-          errorMessage += 'Пожалуйста, попробуйте еще раз позже или используйте другое видео.';
-        }
+        const errorMessage = `Произошла ошибка: ${error.message}`;
         await sendMessage(chatId, errorMessage);
-
-
-
+      } finally {
+        // Close file handle if it was opened
+        if (fileHandle) {
+          try {
+            await fileHandle.close();
+          } catch (closeError) {
+            console.error('Error closing file:', closeError);
+          }
+        }
       }
     });
   } catch (error) {
