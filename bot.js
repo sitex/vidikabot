@@ -149,75 +149,91 @@ const splitCaptionsIntoChunks = (captions, chunkDurationMinutes = 15) => {  // R
 };
 
 const generateTakeaways = async (title, captions, fileHandle) => {
-  const chunks = splitCaptionsIntoChunks(captions);
-  let allTakeaways = '';
-  let previousTimestamps = new Set();
+  const chunks = splitCaptionsIntoChunks(captions, 15); // 15 minute chunks
+  console.log(`Processing ${chunks.length} chunks in parallel`);
 
-  console.log(chunks.length);
+  // Function to process a single chunk
+  const processChunk = async (chunk, chunkIndex) => {
+    const chunkSubtitles = formatSubtitles(chunk);
+    
+    if (fileHandle) {
+      await fileHandle.writeFile(`Chunk ${chunkIndex + 1}:\n${chunkSubtitles}\n\n`);
+    }
 
-  for (let i = 0; i < chunks.length; i++) {
-    const chunkSubtitles = formatSubtitles(chunks[i]);
+    const prompt = `
+      I want you to only answer in Russian.
+      Your goal is to extract key takeaways from the following video transcript chunk ${chunkIndex + 1} of ${chunks.length}.
+      Takeaways must be concise, informative and easy to read & understand.
+      Each key takeaway should be a list item, of the following format:
+      - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
+      
+      Important rules:
+      1. Extract a takeaway roughly every 3-5 minutes of transcript
+      2. Don't skip large portions of the transcript
+      3. Ensure even coverage of the entire chunk
+      4. Avoid clustering takeaways too close together
+      5. Maximum 5-6 takeaways per 15-minute chunk
+      
+      Format requirements:
+      - Timestamp in format HH:MM:SS
+      - Short key takeaway in three to six words in Russian
+      - Keep emoji relevant and unique to each key takeaway item
+      - Do not use the same emoji twice
+      - Do not render brackets
+      - Do not prepend takeaway with "Key takeaway"
+      
+      [VIDEO TITLE]:
+      ${title}
+      
+      [CHUNK TIME RANGE]:
+      ${formatTimestamp(chunk[0].start)} - ${formatTimestamp(chunk[chunk.length-1].start)}
+      
+      [VIDEO TRANSCRIPT]:
+      ${chunkSubtitles}
+
+      Please respond in Russian, using a formal and informative tone.
+      Make sure each takeaway adds new information and isn't redundant.
+      Focus on the main ideas and key transitions in the content.
+      
+      [KEY TAKEAWAYS LIST IN Russian]:
+    `;
 
     try {
-      if (fileHandle) {
-        await fileHandle.writeFile(`${chunkSubtitles}\n`);
-      }
-
-      const prompt1 = `
-        I want you to only answer in Russian.
-        Your goal is to extract key takeaways from the following video transcript.
-        Takeaways must be concise, informative and easy to read & understand.
-        Each key takeaway should be a list item, of the following format:
-        - [Timestamp] [Takeaway emoji] [Short key takeaway in Russian]
-        
-        Important rules:
-        1. Extract a takeaway roughly every 3-5 minutes of transcript
-        2. Don't skip large portions of the transcript
-        3. Ensure even coverage of the entire chunk
-        4. Avoid clustering takeaways too close together
-        5. Maximum 5-6 takeaways per 15-minute chunk
-        
-        Format requirements:
-        - Timestamp in format HH:MM:SS
-        - Short key takeaway in three to six words in Russian
-        - Keep emoji relevant and unique to each key takeaway item
-        - Do not use the same emoji twice
-        - Do not render brackets
-        - Do not prepend takeaway with "Key takeaway"
-        
-        [VIDEO TITLE]:
-        ${title}
-        
-        [PREVIOUS TIMESTAMPS]:
-        ${Array.from(previousTimestamps).join(', ')}
-        
-        [VIDEO TRANSCRIPT]:
-        ${chunkSubtitles}
-
-        Please respond in Russian, using a formal and informative tone.
-        Make sure each takeaway adds new information and is not redundant with previous ones.
-        Focus on the main ideas and key transitions in the content.
-        
-        [KEY TAKEAWAYS LIST IN Russian]:
-      `;
-
-      const result = await model.generateContent(prompt1);
+      const result = await model.generateContent(prompt);
       const response = await result.response;
-      const newTakeaways = response.text();
-      
-      // Extract timestamps from new takeaways and add to set
-      const timestampRegex = /(\d{2}:\d{2}:\d{2})/g;
-      const matches = newTakeaways.match(timestampRegex) || [];
-      matches.forEach(timestamp => previousTimestamps.add(timestamp));
-      
-      allTakeaways += newTakeaways + '\n\n';
+      return {
+        index: chunkIndex,
+        content: response.text().trim(),
+        startTime: chunk[0].start
+      };
     } catch (error) {
-      console.error('Error processing chunk:', error);
-      throw new Error('Не удалось обработать часть видео');
+      console.error(`Error processing chunk ${chunkIndex}:`, error);
+      throw new Error(`Не удалось обработать часть ${chunkIndex + 1} видео`);
     }
+  };
+
+  // Helper function to format timestamps
+  function formatTimestamp(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
   }
 
-  return allTakeaways.trim();
+  try {
+    // Process all chunks in parallel
+    const chunkPromises = chunks.map((chunk, index) => processChunk(chunk, index));
+    const results = await Promise.all(chunkPromises);
+
+    // Sort results by timestamp to maintain chronological order
+    results.sort((a, b) => a.startTime - b.startTime);
+
+    // Combine all takeaways
+    return results.map(result => result.content).join('\n\n');
+  } catch (error) {
+    console.error('Error in parallel processing:', error);
+    throw new Error('Произошла ошибка при обработке видео');
+  }
 };
 
 // Vercel serverless function
