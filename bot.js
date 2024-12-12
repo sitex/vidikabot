@@ -37,16 +37,17 @@ const extractVideoId = (url) => {
 
 const fetchVideoInfo = async (videoId) => {
   const cachedInfo = cache.get(videoId);
+  const cookie = process.env.YOUTUBE_COOKIE || ''
+  const idToken = 'QUFFLUhqa2FscERXcFlRSlIwcTd3TWdzalltSTd4TENyQXw';
+
   if (cachedInfo) return cachedInfo;
 
   try {
-    const cookie = process.env.YOUTUBE_COOKIE || ''
-    console.log('cookie: ' + cookie)
     const options = {
       requestOptions: {
         headers: {
           Cookie: cookie,
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+          'x-youtube-identity-token': idToken
         }
       }
     };
