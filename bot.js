@@ -40,17 +40,16 @@ const fetchVideoInfo = async (videoId) => {
   if (cachedInfo) return cachedInfo;
 
   try {
-    // Add options to handle age-restricted videos and use cookie
+    // Basic options without cookies
     const options = {
-      requestOptions: { 
+      requestOptions: {
         headers: {
-          Cookie: process.env.YOUTUBE_COOKIE || ''
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
-      },
-      lang: 'ru',  // Prefer Russian language
-      quality: 'lowest', // We only need captions, so lowest quality is fine
+      }
     };
 
+    // Get video info
     const videoInfo = await ytdl.getBasicInfo(videoId, options);
     const title = videoInfo.videoDetails.title;
 
@@ -68,12 +67,11 @@ const fetchVideoInfo = async (videoId) => {
       throw new Error('Субтитры на русском или английском не найдены');
     }
 
-    // Use node-fetch with proper error handling
     const captionResponse = await fetch(captionTrack.baseUrl);
     if (!captionResponse.ok) {
-      throw new Error(`Failed to fetch captions: ${captionResponse.statusText}`);
+      throw new Error(`Ошибка при получении субтитров: ${captionResponse.status}`);
     }
-    
+
     const captionXml = await captionResponse.text();
     const captions = parseCaptions(captionXml);
 
@@ -86,12 +84,13 @@ const fetchVideoInfo = async (videoId) => {
     return result;
   } catch (error) {
     console.error('Error fetching video info:', error);
-    if (error.message.includes('Video unavailable')) {
-      throw new Error('Видео недоступно или является приватным');
-    } else if (error.message.includes('age-restricted')) {
-      throw new Error('Видео имеет возрастные ограничения. Пожалуйста, попробуйте другое видео');
+    if (error.message.includes('not exist')) {
+      throw new Error('Видео не существует или недоступно');
+    } else if (error.message.includes('private video')) {
+      throw new Error('Это приватное видео');
+    } else {
+      throw new Error(`Ошибка при получении информации о видео: ${error.message}`);
     }
-    throw new Error(`Ошибка при получении информации о видео: ${error.message}`);
   }
 };
 
